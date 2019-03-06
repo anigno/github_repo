@@ -1,6 +1,0 @@
-change01
-<<<<<<< HEAD
-change02
-=======
-change10
->>>>>>> br2
