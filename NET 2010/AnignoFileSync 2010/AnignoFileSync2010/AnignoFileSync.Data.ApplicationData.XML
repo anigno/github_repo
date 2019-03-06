@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<ApplicationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SyncItems>
+    <SyncItem>
+      <SourceDir>Z:\</SourceDir>
+      <DestDir>D:\Anigno Documents</DestDir>
+      <KeepHistory>false</KeepHistory>
+      <Include>*</Include>
+      <Exclude>*Log-*;*ReSharper*;*bin\Debug*;*obj\Debug*</Exclude>
+    </SyncItem>
+  </SyncItems>
+</ApplicationData>
+ 

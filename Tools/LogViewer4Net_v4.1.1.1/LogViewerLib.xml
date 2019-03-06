@@ -1,0 +1,1856 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>LogViewerLib</name>
+    </assembly>
+    <members>
+        <member name="T:anigno.LogViewer.Lib.LogBL.CompositeFilter">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.Filter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.Filter.IsRowMatching(System.Data.DataRow)">
+            <summary>
+            Matches a single log data row to the filter.
+            </summary>
+            <param name="p_row">Log data row to match to</param>
+            <returns>True if match successfull.</returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.Filter.IsValid">
+            <summary>
+            Returns true if all regualr-expression conditions in filter are legal.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.Filter.EnableHighlighting">
+            <summary>
+            Indicates if rows that matches this filter will be highlighted in grid.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.Filter.HighlightColor">
+            <summary>
+            Specifies the bg color will be used for higlighting this filter.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.Filter.IsNegative">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.Filter.IsPersistent">
+            <summary>
+            Indicates if this filter will be saved
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.Filter.Name">
+            <summary>
+            Gets / sets the name of the filter. Required and cannot be empty.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.CompositeFilter.#ctor(System.String,anigno.LogViewer.Lib.LogBL.FilterList)">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CompositeFilter.ChildFilterNames">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CompositeFilter.IsAnd">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CompositeFilter.FilterList">
+            <summary> 
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.ErrorHandler">
+            <summary>
+            Helper class to handle app errors.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ErrorHandler.WriteToLog(System.String,System.Object[])">
+            <summary>
+            Writes a message to the application log.
+            </summary>
+            <param name="p_msg"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ErrorHandler.WriteToLog(System.Exception)">
+            <summary>
+             Writes an exception to the application log.
+            </summary>
+            <param name="p_ex"></param>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.ExecutionInfo">
+            <summary>
+            This class provides the information about the program execution.</summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogBL.ExecutionInfo.DATETIME_FORMAT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogBL.ExecutionInfo.NEW_EXEC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.#ctor(System.String,System.Boolean)">
+            <summary>
+            Creates a new instance of <see cref="T:anigno.LogViewer.Lib.LogBL.ExecutionInfo"/> object.</summary>
+            <param name="p_fullPath">
+            A fully qualified name of the current execution log file, including ".1" extension.</param>
+            <param name="p_isOnline">
+            Determines whether the executable program is currently running.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.GetPageCount">
+            <summary>
+            Get count of page files for this execution
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.GetPageFileName(System.Int32)">
+            <summary>
+            Get full path for a page file with a specified index.
+            </summary>
+            <param name="p_pageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.GetSummaryFilePath">
+            <summary>
+            Gets the full path of the execution summary file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.Pack(System.String)">
+            <summary>
+            Pack the execution into a zip file.
+            </summary>
+            <param name="p_targetPath"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.getDisplayName(System.String)">
+            <summary>
+            Parse and create the displayable execution name.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.ExecutionInfo.getPageFileName(System.String)">
+            <summary>
+            Get relative path name for a log page file of this execution and the specified extension.
+            </summary>
+            <param name="ext"></param>
+            <returns></returns>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.DisplayName">
+            <summary>
+            Gets the displayable user friendly name of the execution.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.Folder">
+            <summary>
+            Full path of the "\Log" Folder of this execution.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.ForceOnline">
+            <summary>
+            Force Online flag to be true.
+            </summary>
+            <remarks>
+            Useful when online flag cannot be automatically determined -
+            when log folder has readonly permissions.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.FullPath">
+            <summary>
+            Gets the fully qualified path of the execution logfile (no extension).</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.IsNew">
+            <summary>
+            Determines whether the the execution info object 
+            was created before the log file creation.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.IsOnline">
+            <summary>
+            Gets the flag which determines whether 
+            the executable program is currently running.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.ShortName">
+            <summary>
+            Gets the short file name of the execution (no extension).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.ExecutionInfo.TimeStamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.FilterList">
+            <summary>
+            Holds a list of filters
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.Add(anigno.LogViewer.Lib.LogBL.Filter)">
+            <summary>
+            Add a new filter to the collection.
+            </summary>
+            <param name="p_filter"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.AddRange(anigno.LogViewer.Lib.LogBL.FilterList)">
+            <summary>
+            Add another FilterList at the end of this instance.
+            </summary>
+            <param name="p_list"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.Load(System.String)">
+            <summary>
+            Create a FilterList instance from a serialized file.
+            </summary>
+            <param name="p_loadPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.Remove(anigno.LogViewer.Lib.LogBL.Filter)">
+            <summary>
+            Remove filter from the collection.
+            </summary>
+            <param name="p_filter"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.Save(System.String)">
+            <summary>
+            Serialize this instance to a file.
+            </summary>
+            <param name="p_savePath"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.FilterList.Swap(System.Int32,System.Int32)">
+            <summary>
+            Swap positions of two filters
+            </summary>
+            <param name="i1"></param>
+            <param name="i2"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.FilterList.Item(System.Int32)">
+            <summary>
+            Get a filter from the collection by numeric index.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.LeafFilter">
+            <summary>
+            This class holds settings for a LogViewer filter and can perform matching
+            against a single row.
+            </summary>
+            <remarks>
+            Filter fields are always joined with AND operator.
+            Message and ReportedBu fields can be regular expressions.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LeafFilter.#ctor(System.String)">
+            <summary>
+            Creates new filter with default settings.
+            </summary>
+            <param name="p_filterName"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LeafFilter.#ctor(System.String,System.String,System.String,System.String,System.String,System.Boolean,System.Boolean,System.Boolean,System.DateTime,System.DateTime,System.Boolean)">
+            <summary>
+            Creates a new filter instance.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LeafFilter.IsValid">
+            <summary>
+            Returns true if all regualr-expression conditions in filter are legal.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.EndDate">
+            <summary>
+            Gets or sets end date condition.
+            </summary>
+            <remarks>
+            Contains DateTime.MaxValue if condition is disabled.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.EndDateEnabled">
+            <summary>
+            Gets or sets whether end date condition is enabled.
+            </summary>
+            <remarks>
+            Set EndDate Property directly if you want to enable this condition.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.IsEmpty">
+            <summary>
+            Returns true if filter is empty.
+            </summary>
+            <remarks>
+            Filter is empty no conditions are set.
+            Empty filter will match any row.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.MessageFilter">
+            <summary>
+            Gets or sets the Message Condition value.
+            </summary>
+            <remarks>
+            If value is empty, condition is not set.
+            Value cannot be null.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.MessageFilterIsRegEx">
+            <summary>
+            Indicates if the Message condition value is a regual expression.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.ReportedByFilter">
+            <summary>
+            Gets or sets the ReportedBy Condition value.
+            </summary>
+            <remarks>
+            If value is empty, condition is not set.
+            Value cannot be null.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.ReportedByIsRegEx">
+            <summary>
+            Indicates if the ReportedBy condition value is a regual expression.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.SeverityFilter">
+            <summary>
+            Gets or sets the Severity Condition value.
+            </summary>
+            <remarks>
+            If value is empty, condition is not set.
+            Should contains multiple severities, seperated by commas. Always upprcased.
+            Value cannot be null.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.StartDate">
+            <summary>
+            Gets or sets start date condition.
+            </summary>
+            <remarks>
+            Contains DateTime.MinValue if condition is disabled.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.StartDateEnabled">
+            <summary>
+            Gets or sets whether start date consition is enabled.
+            </summary>
+            <remarks>
+            Set StartDate Property directly if you want to enable this condition.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LeafFilter.ThreadIdFilterIsRegEx">
+            <summary>
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.LogSource">
+            <summary>
+              This class provides the information about a folder containing log executions.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.#ctor">
+            <summary>
+            // for deserialization only
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.#ctor(System.String,System.String)">
+            <summary>
+              Creates a new instance
+            </summary>
+            <param name = "p_logPath"></param>
+            <param name = "p_name"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.FindExecution(System.String)">
+            <summary>
+              Gets an execution info according to execution short name (no extension).
+            </summary>
+            <param name = "p_execShortName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.GetExecutions(System.Boolean)">
+            <summary>
+              Retrieve all executions of this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.GetLogLayout">
+            <summary>
+              Retrieve the program's log layout from it's log4net configuration file.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogSource.Validate">
+            <summary>
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogBL.LogSource.m_exists">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.ErrorMessage">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.ErrorSoundEnabled">
+            <summary>
+              Indicates if the Error Sound notification is enabled  (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.Exists">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.FatalSoundEnabled">
+            <summary>
+              Indicates if the Fatal Sound notification is enabled  (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.FilterPaneOpened">
+            <summary>
+              Indicates if the Filter Pane is opened (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.HelpersPaneVisible">
+            <summary>
+              Indicates if the Helpers Pane is opened (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.IsValid">
+            <summary>
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.LogPath">
+            <summary>
+              Gets or sets the fully qualified path of the executable program.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.RefreshInterval">
+            <summary>
+              Stores the refresh interval in this program (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.SoundNotificationEnabled">
+            <summary>
+              Indicates if the Sound notifications are enabled  (configuration value).
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogSource.WarnSoundEnabled">
+            <summary>
+              Indicates if the Warn Sound notification is enabled  (configuration value).
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.LogInfo">
+            <summary>
+            Holds information of a specific execution or a single log file.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogInfo.#ctor(anigno.LogViewer.Lib.LogBL.CategoryInfo,anigno.LogViewer.Lib.LogBL.LogSource,anigno.LogViewer.Lib.LogBL.ExecutionInfo)">
+            <summary>
+            Constructor for an execution
+            </summary>
+            <param name="p_wsi"></param>
+            <param name="p_lfi"></param>
+            <param name="p_ei"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogInfo.#ctor(System.String)">
+            <summary>
+            Constructor for a standalone file log.
+            </summary>
+            <param name="p_logFilePath"></param>
+            <remarks>
+            Always uses the default log layout.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogInfo.BuildPrototype">
+            <summary>
+            Build prototype DataTable for the log according to it's layout.
+            </summary>
+            <remarks>
+            The prototype DataTable should not be filled, but only cloned, to 
+            save DataTable initialization time.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.IsSingleFile">
+            <summary>
+            Indicates if this log is a single file. 
+            </summary>
+            <remarks>
+            In single file LogIngo instance, both 
+            WorkstationInfo, ProgramInfo, ExecutionInfo properties 
+            are null, and only SingleFilePath proeprty is valid.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.LogLayout">
+            <summary>
+            Get the log layout for this log.
+            </summary>
+            <remarks>
+            For single files, log layout is always the default one.
+            For Executions, BuildPrototype() method must be called pripor to using
+            this property, to retrieve log layout from log4net configuration file.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.CachePrototype">
+            <summary>
+            Gets the prototype DataTable, adjusted to the current log layout.
+            </summary>
+            <remarks>
+            BuildPrototype() method must be called pripor to using
+            this property.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.CategoryInfo">
+            <summary>
+            Gets the log's workstation. Not valid in single files.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.LogSource">
+            <summary>
+            Gets the log's Program. Not valid in single files.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.ExecutionInfo">
+            <summary>
+            Gets the log's Execution. Not valid in single files.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.SingleFilePath">
+            <summary>
+            Get the single file full path. Vald only in single file LogInfo.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogInfo.LayoutInitialized">
+            <summary>
+            Indicates if log layout was retrieved from program's configuration.
+            </summary>
+            <remarks>
+            Always true in single files.
+            </remarks>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.LogViewerConfig">
+            <summary>
+            This class holds the all LogViewer configuration settings. 
+            Intended to be (un)serialized to/from disk at application startup / shotdown.
+            </summary>
+            <remarks>
+            Implemented as a singleton.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogViewerConfig.Load(System.String)">
+            <summary>
+            Deserizlize the LogViewer configuration settings from a binary file. 
+            </summary>
+            <param name="p_path"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogViewerConfig.Reload">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogViewerConfig.Save">
+            <summary>
+            Serizlize the LogViewer configuration settings to a binary file. 
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.LogViewerConfig.Save(System.String)">
+            <summary>
+            Serizlize the LogViewer configuration settings to a binary file. 
+            </summary>
+            <param name="p_path"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.FindViewDockLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.FindViewGridLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.GlobalFilters">
+            <summary>
+            Gets the defined filters in LogViewer.
+            </summary>
+            <remarks>
+            Filters are global, which means they are the same for Search Pane and Filters Pane.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LastSelectedExecution">
+            <summary>
+            Name of the Last selected Execution in connectivity dialog.
+            </summary>
+            <remarks>
+            Can be null if no Execution was selected.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LastSelectedLogFolder">
+            <summary>
+            Path of the Last selected Log Folder in connectivity dialog.
+            </summary>
+            <remarks>
+            Can be null if no connectivity dialog was not in standalone execution mode.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LastSelectedProgram">
+            <summary>
+            Name of the Last selected Program in connectivity dialog.
+            </summary>
+            <remarks>
+            Can be null if no Program was selected.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LastSelectedWorkStation">
+            <summary>
+            Name of the Last selected workstation in connectivity dialog.
+            </summary>
+            <remarks>
+            Can be null if no workstation was selected.
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LogViewDockLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.LogViewGridLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.Settings">
+            <summary>
+            Singleton access point to the LogViewer configuration settings.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.LogViewerConfig.WorkStations">
+            <summary>
+            Gets the defines workstations. 
+            </summary>
+            <remarks>
+            Each workstation contains a list of defined ProgramInfo instances, which is serialized to.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.BookmarksStorage.GetBookmarks">
+            <summary>
+            Gets a sorted list of all bookmarks pointers.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.CategoryInfo">
+            <summary>
+            Summary description for CategoryInfo.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.CategoryInfo.#ctor(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_name"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.CategoryInfo.Add(anigno.LogViewer.Lib.LogBL.LogSource)">
+            <summary>
+            
+            </summary>
+            <param name="p_lfi"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.CategoryInfo.Remove(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="p_index"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.CategoryInfo.Clear">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CategoryInfo.Name">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CategoryInfo.LogFolderCount">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CategoryInfo.Item(System.Int32)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.CategoryInfo.Item(System.String)">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogBL.WorkstationInfoList">
+            <summary>
+            Holdes a list of WorkstationInfos
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.WorkstationInfoList.Add(anigno.LogViewer.Lib.LogBL.CategoryInfo)">
+            <summary>
+            Add a WorkstationInfo instance to the collection.
+            </summary>
+            <param name="p_wsi"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogBL.WorkstationInfoList.Remove(anigno.LogViewer.Lib.LogBL.CategoryInfo)">
+            <summary>
+            Remove a WorkstationInfo instance from the collection.
+            </summary>
+            <param name="p_wsi"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogBL.WorkstationInfoList.Item(System.Int32)">
+            <summary>
+            Gets a WorkstationInfo instance from the collection according to it's index.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.AssemblyScanner">
+            <summary>
+            This Helper class has a single static method which extract full type for any 
+            class which implements logging in the specified folder.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.AssemblyScanner.ExtractLoggingClasses(System.String)">
+            <summary>
+            Extract full type for any class which implements logging in the specified folder.
+            </summary>
+            <param name="p_path"></param>
+            <returns>list of full types</returns>
+            <remarks>
+            The assembly loading is done in a dedicated AppDomain so that the loaded
+            assemblies will be released when the AppDomain is released.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.AssemblyScanner.isLoggingClass(System.Type)">
+            <summary>
+            This class iterates the static private members of a class and looks for a member 
+            that implements log4net.ILog interface.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator">
+            <summary>
+            Summary description for ILogConfigurator.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.GetConfiguredLoggers">
+            <summary>
+            Get the list of the configured loggers from the configuration of log4net.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.SetConfiguredLoggers(System.Collections.ArrayList)">
+            <summary>
+            Assign a new list of the configured loggers to the configuration of log4net.</summary>
+            <param name="p_loggers">A specified list of the configured loggers.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.RefreshTree">
+            <summary>
+            Forced regeneration of the namespace tree.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.LoadLoggerConfiguration(anigno.LogViewer.Lib.LogBL.LogSource)">
+            <summary>
+            Read the log4net configuration file.</summary>
+            <param name="p_logSource">
+             A program info object.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.ApplyConfigurationChanges(System.String)">
+            <summary>
+            Apply changes to the log4net configuration file.</summary>
+            <param name="p_tagretFile"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.SaveConfigurationAs(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_fileName"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.RootNamespace">
+            <summary>
+            Gets a root node of the namespace hierarchic structure.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.ActiveLayout">
+            <summary>
+            Gets the active layout from the log4net configuration.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.LogFilesPath">
+            <summary>
+            Get the path of the log files from the configuration of log4net.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.ILogConfigurator.DefaultLevel">
+            <summary>
+            Get or set the priority level of the root logger.</summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator">
+            <summary>
+            This class is reposible for 2 subjects: <br/>
+            1. The configuration of the log4Net (in online mode) <br />
+            2. The tree of loggers that are defined in the system. <br />
+            </summary>
+            <remarks>
+            When using this class, set the assemblies path first, 
+            then call GetLoggersHierarchy and LoadLoggerConfiguration.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.GetConfiguredLoggers">
+            <summary>
+            Get the list of the configured loggers from the configuration of log4net.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.SetConfiguredLoggers(System.Collections.ArrayList)">
+            <summary>
+            Assign a new list of the configured loggers to the configuration of log4net.</summary>
+            <param name="p_loggers">A specified list of the configured loggers.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.RefreshTree">
+            <summary>
+            Forced regeneration of the namespace tree.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.LoadLoggerConfiguration(anigno.LogViewer.Lib.LogBL.LogSource)">
+            <summary>
+            Load the configuration of log4Net. The configuration file of log4Net is assumed 
+            to be config.log4net and exist in the assemblies folder.</summary>
+            <param name="p_logSource">
+            A program info object.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.ApplyConfigurationChanges(System.String)">
+            <summary>
+            Apply changes to the log4net configuration file.</summary>
+            <param name="p_tagretFile"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.SaveConfigurationAs(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_fileName"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.GetLogDirectory(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_configPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.GetLogLayout(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_configPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.ensureInitialized">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.setDefaultLevel(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_level"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.buildLoggersTree">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.saveLoggersTree">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.loadLoggersTree">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.addNamespace(System.String[],anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode,System.Int32)">
+            <summary>
+            Add a namespace as a hieararchy to the tree.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.extractActiveAppender(anigno.LogViewer.Lib.LogConfigurator.XMLHelper,System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="p_xml"></param>
+            <param name="p_parentNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.extractParamValue(anigno.LogViewer.Lib.LogConfigurator.XMLHelper,System.Xml.XmlNode,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_xml"></param>
+            <param name="p_parentNode"></param>
+            <param name="p_paramName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.extractDefaultLevel(anigno.LogViewer.Lib.LogConfigurator.XMLHelper,System.Xml.XmlNode)">
+            <summary>
+            
+            </summary>
+            <param name="p_xml"></param>
+            <param name="p_parentNode"></param>
+            <returns></returns>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.RootNamespace">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.ActiveLayout">
+            <summary>
+            Get the active layout string as written in the configuration file of log4Net.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.LogFilesPath">
+            <summary>
+            The path of the log files (as written in the configuration file. 
+            Combine it with the assemblies path to get the absolute path of the log files.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LogConfigurator.DefaultLevel">
+            <summary>
+            The default severity level of the root logger, 
+            as configured in the configuration file of log4Net.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.LoggerDetails">
+            <summary>
+            LoggerDetails is a structure that contains the logger name 
+            and the overriding severity level.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerDetails.LoggerName">
+            <summary>
+            The logger name (full name, including namespace and class name).</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerDetails.Level">
+            <summary>
+            Severity level of this logger.</summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode">
+            <summary>
+            Represent a node in the tree of loggers.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.#ctor(System.String)">
+            <summary>
+            Overloaded constructor.</summary>
+            <param name="p_text"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.#ctor(System.String,System.String)">
+            <summary>
+            Overloaded constructor.</summary>
+            <param name="p_text"></param>
+            <param name="p_loggerName"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.#ctor(System.String,System.String,System.Boolean)">
+            <summary>
+            Overloaded constructor.</summary>
+            <param name="p_text"></param>
+            <param name="p_loggerName"></param>
+            <param name="p_isClass"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.GetChild(System.String)">
+            <summary>
+            Return the node that points on a child whose name is passed as parameter.
+            If the child is not found, create a child node with that name.</summary>
+            <param name="p_childName">The child name.</param>
+            <returns>Child LoggerTreeNode.</returns>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.Text">
+            <summary>
+            The name of the logger to be displayed in a tree control - 
+            only the right-most string of the logger name.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.IsClass">
+            <summary>
+            True - the node represents a logger of a class. 
+            False - the node represents a logger of namespace.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.LoggerName">
+            <summary>
+            The full logger name, as written in the configuration file.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.LoggerTreeNode.ChildLoggers">
+            <summary>
+            A list of child loggers. You need to cast each of them to LoggerTreeNode.</summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.XMLHelper">
+            <summary>
+            This class attempts to wrap up some common things
+            we need to do when dealing with Xml and C# classes:
+            Load, Save, Add/Remove Attributes/Elements, et al.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.#ctor">
+            <summary>
+            Default constructor.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadXML(System.String,anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadType)">
+            <summary>
+            Easy way to load XML from a file or URL.</summary>
+            <param name="sourceXMLOrFile"></param>
+            <param name="loadType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.SaveToFile(System.String)">
+            <summary>
+            Save the XML to a target file.</summary>
+            <param name="sTargetFileName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetURLContent(System.String)">
+            <summary>
+            Helper method to get string content from a URL - 
+            not necessarily XML, but probably.</summary>
+            <param name="sURL"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.MoveToRoot">
+            <summary>
+            Helper function if navigation is used to ensure 
+            we are at the root node.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildNodesFromCriteria(System.String)">
+            <summary>
+            Gets an ArrayList of XmlNode children using an xPath expression.</summary>
+            <param name="xPathExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetFirstChildNodeFromCriteria(System.String)">
+            <summary>
+            Get first child node given an XPath expression.</summary>
+            <param name="xPathExpression"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetAttributeValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Attribute value from a given XmlNode.</summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetAttributeInt32Value(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Attribute int32 (int) value from a given XmlNode.</summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetAttributeFloatValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Attribute floating point/Single value from a given XmlNode.</summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetAttributeDoubleValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Attribute double value from a given XmlNode.</summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetAttributeBooleanValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Attribute boolean value from a given XmlNode.</summary>
+            <param name="node"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetElementValue(System.Xml.XmlNode)">
+            <summary>
+            Get the Element value from a given XmlNode.</summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetElementInt32Value(System.Xml.XmlNode)">
+            <summary>
+            Get the Element Int32 value from a given XmlNode.</summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetElementFloatValue(System.Xml.XmlNode)">
+            <summary>
+            Get the Element float/single floating point value from a given XmlNode.</summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetElementDoubleValue(System.Xml.XmlNode)">
+            <summary>
+            Get the Element Double value from a given XmlNode.</summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetElementBooleanValue(System.Xml.XmlNode)">
+            <summary>
+            Get the Element Boolean value from a given XmlNode.</summary>
+            <param name="xmlNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildElementValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the first Child Element value from a given XmlNode.</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildElementInt32Value(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Child Element int32 value from a given XmlNode and ElementName</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildElementFloatValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Child Element floating point/single value from 
+            a given XmlNode and ElementName</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildElementDoubleValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Child Element double value 
+            from a given XmlNode and ElementName</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildElementBooleanValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Get the Child Element boolean value 
+            from a given XmlNode and ElementName</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetFirstChildXmlNodeFromRoot(System.String)">
+            <summary>
+            Returns the first XmlNode object matching this element name
+            <seealso cref="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetFirstChildXmlNode(System.Xml.XmlNode,System.String)"/></summary>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetFirstChildXmlNode(System.Xml.XmlNode,System.String)">
+            <summary>
+            Returns the first XmlNode object matching this element name 
+            NOTE:	this doesn't seem to work if parent is Root!  
+            		Use GetFirstChildXmlNodeFromRoot
+            <seealso cref="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetFirstChildXmlNodeFromRoot(System.String)"/></summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetChildNodesFromRoot(System.String)">
+            <summary>
+            Returns an XmlNodeList of child nodes matching this element name</summary>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GetRecursiveChildNodesFromParent(System.Xml.XmlNode,System.String)">
+            <summary>
+            Returns an ArrayList (boxed XmlNode objects) of child nodes matching 
+            this element name. This function is recursive in that it will find 
+            ALL the children, even if their in sub folders (sub child nodes)</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.CreateNodeElement(System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            Create an Element under the given parent based 
+            on the name and value pair.</summary>
+            <param name="parentNode"></param>
+            <param name="sElementName"></param>
+            <param name="sElementValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.CreateComment(System.Xml.XmlNode,System.String)">
+            <summary>
+            Creates and adds a comment before the given node.  
+            If root node, or null, the comment node is Appended to the tree.</summary>
+            <param name="insertAfterThisNode"></param>
+            <param name="sVal"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.CreateXmlDeclaration(System.String,System.String,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="version"></param>
+            <param name="encoding"></param>
+            <param name="standalone"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.DeleteNodeElement(System.Xml.XmlNode)">
+            <summary>
+            Delete an XmlNode from the tree</summary>
+            <param name="targetNode"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.ModifyNodeElementValue(System.Xml.XmlNode,System.String)">
+            <summary>
+            Modify an XmlNode elment with a new value.</summary>
+            <param name="targetNode"></param>
+            <param name="sNewElementValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.CreateNodeAttribute(System.Xml.XmlElement,System.String,System.String)">
+            <summary>
+            Create a new attribute given an XmlElement (XmlNode) target</summary>
+            <param name="targetElement"></param>
+            <param name="sAttributeName"></param>
+            <param name="sAttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.DeleteNodeAttribute(System.Xml.XmlNode,System.String)">
+            <summary>
+            Delete an attribute from the given target node.</summary>
+            <param name="targetNode"></param>
+            <param name="sAttributeName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GenerateSchema(System.String)">
+            <summary>
+            GenerateSchema a schema file from a given target file</summary>
+            <param name="sTargetFile"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.GenerateSchemaAsString">
+            <summary>
+            GenerateSchemaAsString based on the currently loaded Xml</summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.ModifyNodeAttributeValue(System.Xml.XmlNode,System.String,System.String)">
+            <summary>
+            Modify an attribute value to a new value</summary>
+            <param name="targetNode"></param>
+            <param name="sAttributeName"></param>
+            <param name="sNewAttributeValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.ToString">
+            <summary>
+            Easy way to get the entire Xml string.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.DoPostLoadCreateInit">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.Encode(System.String)">
+            <summary>
+            Internal method used to ensure that HTML and XML tags 
+            are encoded within their values.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.Decode(System.String)">
+            <summary>
+            Internal method used to ensure that HTML and XML tags 
+            are decoded for display in other systems.</summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.HandleException(System.Exception)">
+            <summary>
+            Internal method used to process errors 
+            and exception handling.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LastErrorMessage">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.RootNode">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.Document">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.Navigator">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadType">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadType.FromString">
+            <summary></summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadType.FromFile">
+            <summary></summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.LoadType.FromURL">
+            <summary></summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogConfigurator.XMLHelper.Save">
+            <summary>
+            delegates - more complex save operations can do it themselves...</summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper">
+            <summary>
+            This class holds static Log Data helper methods.
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.DEFAULT_LOG_LAYOUT">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.GetExecutionsInFolder(System.String)">
+            <summary>
+            Get all executions (file names of first pages) in the specified folder.
+            </summary>
+            <param name="p_logFolderPath">full path to the folder with log pages</param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.IsExecutionRunning(System.String)">
+            <summary>
+            Return true if the given file is of a currently executing application.</summary>
+            <param name="p_executionPath">
+            The full path of the execuion (no extenstion).</param>
+            <returns>
+            True, if there is an open file, which indicates that the application is currently running.</returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.GetExecutionPageCount(System.String)">
+            <summary>
+            Get count of pages in execution.
+            </summary>
+            <param name="p_execFullPath">full path for execution (no extension)</param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.getLastFileNumber(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_execPath"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.getExecutionPosition(System.Collections.ArrayList,anigno.LogViewer.Lib.LogBL.ExecutionInfo)">
+            <summary>
+            Find position to insert new execution according to descending date order
+            </summary>
+            <param name="p_executions"></param>
+            <param name="p_newExec"></param>
+            <returns></returns>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogDataHelper.MSG_SEPARATOR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogFields">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.TimeStamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.Severity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.ReportedBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.LoggerName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.ThreadID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.File">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.Line">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.MessageIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogFields.PageIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields">
+            <summary>
+            Log layout elements
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields.TimeStamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields.Thread">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields.Severity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields.LoggerName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLayoutFields.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.PageCounters">
+            <summary>
+            Counters for messages in a single log page. 
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.#ctor(System.Int32)">
+            <summary>
+            Creates a new instance of PageCounters with  empty data.</summary>
+            <param name="p_pageNumber"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.#ctor(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,System.DateTime,System.DateTime)">
+            <summary>
+            Creates a new instance of PageCounters with full data.
+            </summary>
+            <param name="p_pageNumber"></param>
+            <param name="p_fatal"></param>
+            <param name="p_error"></param>
+            <param name="p_warn"></param>
+            <param name="p_info"></param>
+            <param name="p_debug"></param>
+            <param name="p_fromTime"></param>
+            <param name="p_toTime"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.#ctor(System.Int32,System.Boolean)">
+            <summary>
+            Creates a new instance of PageCounters as unavailable data.
+            </summary>
+            <param name="p_pageNumber"></param>
+            <param name="p_unavailable"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.CalcPageCounters(System.Data.DataTable,System.Int32)">
+            <summary>
+            Calculate and returns PageCounters for the specified log data.
+            </summary>
+            <param name="p_table"></param>
+            <param name="p_pageNumber"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Clone">
+            <summary>
+            Clone this instance.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Combine(anigno.LogViewer.Lib.LogDataProvider.PageCounters)">
+            <summary>
+            Combine another instance to this.
+            </summary>
+            <param name="p_combineWith">instance to combine with</param>
+            <remarks>
+            DateRange values are unioned.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Reset">
+            <summary>
+            Reset all counters.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Increment(System.String)">
+            <summary>
+            Incerment the specified counter.
+            </summary>
+            <param name="p_severity"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Fatal">
+            <summary>
+            Count of fatal messages.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Error">
+            <summary>
+            Count of error messages
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Warn">
+            <summary>
+            Count of warning messages
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Info">
+            <summary>
+            Count of info messages
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Debug">
+            <summary>
+            Count of debug messages
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.DateRangeFrom">
+            <summary>
+            Date of the earlier message in page.
+            </summary>
+            <remarks>
+            Default is DateTime.MinValue
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.DateRangeTo">
+            <summary>
+            Date of the lates message in page.
+            </summary>
+            <remarks>
+            Default is DateTime.MinValue
+            </remarks>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.IsDateRangeValid">
+            <summary>
+            True if DateRangeFrom and DateRangeTo are set.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.PageNum">
+            <summary>
+            Current page number.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Unavailable">
+            <summary>
+            Indicates that data is not available for this instance.
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.PageCounters.Total">
+            <summary>
+            Total count of messages in page.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventHandler">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventArgs">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventArgs.#ctor(System.String)">
+            <summary>
+            Constructor.</summary>
+            <param name="p_fullName"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventArgs.Name">
+            <summary>
+            Gets the name of the affected file.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventArgs.FullName">
+            <summary>
+            Gets the fully qualified name of the affected file.</summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.FileCreationEventArgs.FileNumber">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogExecutionMonitor">
+            <summary>
+            This class can alert when a new execution is added.
+            </summary>
+            <remarks>
+            Monitoring is done using a FileSystemWatcher which monitors creation 
+            of files with ".1" extension in the log directory.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogExecutionMonitor.#ctor(System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="p_logDir">
+            Full path to the program's executable. 
+            Cannot be changed later.</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogExecutionMonitor.newExecutionCreated(System.Object,System.IO.FileSystemEventArgs)">
+            <summary>
+            Called when new execution file is created.
+            Raises the NewExecutionCreated event.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogExecutionMonitor.MonitoringEnabled">
+            <summary>
+            Enable raising events. Default is false.
+            </summary>
+        </member>
+        <member name="E:anigno.LogViewer.Lib.LogDataProvider.LogExecutionMonitor.NewExecutionCreated">
+            <summary>
+            Raised when a new execution file is created in the monitored folder.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogLineParser">
+            <summary>
+            Parses a single log data line.
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.DATETIME_FORMAT">
+            <summary>
+            Format of timestamp in log files.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.#ctor(System.String)">
+            <summary>
+            Constructor.</summary>
+            <param name="p_layoutPattern"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.Parse(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="p_logEntry"></param>
+            <returns>False if Msg is incomplete</returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.Reset">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.TimeStamp">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.ThreadID">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.Severity">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.LoggerName">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.ReportedBy">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.Message">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.File">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogLineParser.Line">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogPageMonitor">
+            <summary>
+            Alerts when a new log page file is added to an execution.
+            </summary>
+            /// <remarks>
+            Monitoring is done using a FileSystemWatcher which monitors creation 
+            of a file in the log directory, with the prefix of the execution 
+            and the next number as extension 
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageMonitor.#ctor(System.String)">
+            <summary>
+            Creates a new instance.
+            </summary>
+            <param name="p_logExecutionPath">
+            Full path of an execution (w/o ".n" extension).
+            Cannot be changed later.
+            </param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageMonitor.newPageCreated(System.Object,System.IO.FileSystemEventArgs)">
+            <summary>
+            Called when new page file is created.
+            Raises the NewPageCreated event and updates the watcher to watch for the next file.
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.LogPageMonitor.MonitoringEnabled">
+            <summary>
+            Enable raising events. Default is false.
+            </summary>
+        </member>
+        <member name="E:anigno.LogViewer.Lib.LogDataProvider.LogPageMonitor.NewPageCreated">
+            <summary>
+            Raised when a matching new page file is created in the monitored folder.
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.LogPageReader">
+            <summary>
+            This class reads an offline log page file in its entirety.
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.MSG_SEPARATOR">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.#ctor(System.String)">
+            <summary>
+            Creates a new instance for the specified layout.
+            </summary>
+            <param name="p_logLayout"></param>
+            <remarks>
+            Instance is reusable for multiple Open() methods.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.Open(System.String,System.Data.DataTable)">
+            <summary>
+            Reads the specified log file, and fill information in the specified DataTable.
+            File is closed in the end of read.
+            </summary>
+            <param name="p_logPageFilePath"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.putIntoTheCache(System.String,System.Data.DataTable)">
+            <summary>
+            Parse a text log and fill DataTable.
+            </summary>
+            <param name="p_buffer"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.putMsgIntoTheCache(System.String,System.Data.DataTable)">
+            <summary>
+            Parse and insert a single log line into the specified cache
+            </summary>
+            <param name="Msg"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.readToEnd(System.String,System.Data.DataTable)">
+            <summary>
+            Read log file, fill DataTable cache, and close it.
+            </summary>
+            <param name="p_logFilePath">Log file to read</param>
+            <param name="p_cache">DataTable to fill</param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.readToEnd(System.IO.StreamReader,System.Data.DataTable)">
+            <summary>
+            Read log file from stream
+            </summary>
+            <param name="p_streamReader"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.m_logLayout">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.m_logParser">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="F:anigno.LogViewer.Lib.LogDataProvider.LogPageReader.m_nextMessageIndex">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader">
+            <summary>
+            This class reads an online log page file and leaves it open until closed.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.#ctor(System.String)">
+            <summary>
+            Creates a new instance for the specified layout.
+            </summary>
+            <param name="p_layout"></param>
+            /// <remarks>
+            Instance is reusable for multiple Open() methods.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.Finalize">
+            <summary>
+            Destroyes this instance. Closes any currently opened log page.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.Open(System.String,System.Data.DataTable)">
+            <summary>
+            Opens the log page but do not read it.
+            </summary>
+            <param name="p_logPageFilePath"></param>
+            <param name="p_cache">Can be null</param>
+            <returns></returns>
+            <remarks>
+            Any currently opened log page must be closed before calling this method.
+            </remarks>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.Read(System.Data.DataTable)">
+            <summary>
+            Read the opened log page from current cursor position.
+            </summary>
+            <param name="p_cache"></param>
+            <returns></returns>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.Close">
+            <summary>
+            Close the opened log file.
+            </summary>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.readToEnd(System.IO.StreamReader,System.Data.DataTable)">
+            <summary>
+            Read the specified log stream and fills cache.
+            Stream is kept open.
+            </summary>
+            <param name="p_streamReader"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="M:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.putIntoTheCache(System.String,System.Data.DataTable)">
+            <summary>
+            Fills cache from a log text.
+            </summary>
+            <param name="p_buffer"></param>
+            <param name="p_cache"></param>
+        </member>
+        <member name="P:anigno.LogViewer.Lib.LogDataProvider.OnlineLogPageReader.IsOpened">
+            <summary>
+            True if a log page is currently opend in this instance.
+            </summary>
+        </member>
+    </members>
+</doc>

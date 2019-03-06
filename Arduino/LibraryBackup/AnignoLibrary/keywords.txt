@@ -1,0 +1,11 @@
+AnignoLibrary	KEYWORD3
+GetString	KEYWORD2
+SerialPrintlnValue	KEYWORD2
+GetFloatAverage	KEYWORD2
+GetSonicDistanceCm	KEYWORD2
+
+aaa	KEYWORD2
+bbb	KEYWORD2
+ccc	KEYWORD3
+ddd	LITERAL1
+eee	LITERAL2

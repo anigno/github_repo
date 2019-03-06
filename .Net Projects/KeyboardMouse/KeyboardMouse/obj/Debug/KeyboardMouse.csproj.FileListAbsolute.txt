@@ -1,0 +1,10 @@
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\bin\Debug\KeyboardMouse.exe.config
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\bin\Debug\KeyboardMouse.exe
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\bin\Debug\KeyboardMouse.pdb
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\bin\Debug\AnignoraUI.dll
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\bin\Debug\AnignoraUI.pdb
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\obj\Debug\KeyboardMouse.csprojAssemblyReference.cache
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\obj\Debug\KeyboardMouse.csproj.CoreCompileInputs.cache
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\obj\Debug\KeyboardMouse.csproj.CopyComplete
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\obj\Debug\KeyboardMouse.exe
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouse\obj\Debug\KeyboardMouse.pdb

@@ -1,0 +1,13 @@
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\bin\Debug\AnignoraUI.dll
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\bin\Debug\AnignoraUI.pdb
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.csprojAssemblyReference.cache
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.Properties.Resources.resources
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.csproj.GenerateResource.cache
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.csproj.CoreCompileInputs.cache
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.csproj.CopyComplete
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\bin\Debug\KeyboardMouse.exe.config
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\bin\Debug\KeyboardMouse.exe
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\bin\Debug\KeyboardMouse.pdb
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouse.exe
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouse.pdb
+D:\HG\bitbucket\.Net Projects\KeyboardMouse\KeyboardMouseForm\obj\Debug\KeyboardMouseForm.FormMain.resources

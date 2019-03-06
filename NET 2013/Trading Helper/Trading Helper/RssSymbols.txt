@@ -1,0 +1,7 @@
+﻿http://feeds.marketwatch.com/marketwatch/topstories/
+http://feeds.marketwatch.com/marketwatch/realtimeheadlines/
+http://feeds.marketwatch.com/marketwatch/bulletins
+http://feeds.marketwatch.com/marketwatch/StockstoWatch/
+http://www.themarker.com/tmc/content/xml/rss/sections/marketfeed.xml
+http://www.globes.co.il/webservice/rss/rssfeeder.asmx/FeederNode?iID=1225
+http://www.google.com/finance/company_news?q=INDEXSP:.INX&output=rss

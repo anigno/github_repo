@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<V2VConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SystemName>System V2V</SystemName>
+  <SymbolsNames>
+    <string>VIX</string>
+    <string>VXX</string>
+  </SymbolsNames>
+  <MaxDaysHoldingPos>6</MaxDaysHoldingPos>
+  <IsSystemActive>true</IsSystemActive>
+  <IsShowInUi>true</IsShowInUi>
+  <RegularProfitCut>0.2</RegularProfitCut>
+  <RegularLossCut>-0.07</RegularLossCut>
+  <RegularMultiplier>0.3</RegularMultiplier>
+  <PositiveParam>-21</PositiveParam>
+  <NegativeParam>85</NegativeParam>
+  <FormulaOneParam>9</FormulaOneParam>
+  <SmallAverage>39</SmallAverage>
+  <LargeAverage>190</LargeAverage>
+  <OtherAvg>1</OtherAvg>
+  <ProfitSymbol>
+    <string>VXX</string>
+  </ProfitSymbol>
+  <NoneTriggerSymbols />
+  <RegularLossCutA>0</RegularLossCutA>
+  <RegularProfitCutA>0</RegularProfitCutA>
+  <MovingAvgShortDays>1</MovingAvgShortDays>
+  <MovingAvgLongDays>6</MovingAvgLongDays>
+  <DaysToOptionMaturity>13</DaysToOptionMaturity>
+  <OptionsWeightCall>9999</OptionsWeightCall>
+  <OptionsWeightPut>1</OptionsWeightPut>
+  <OptionsChangeCall>9999</OptionsChangeCall>
+  <OptionsChangePut>0</OptionsChangePut>
+  <VolatilityConstant>60</VolatilityConstant>
+  <UseOptionCalculation>false</UseOptionCalculation>
+  <SignalTypeCalculated>Short</SignalTypeCalculated>
+  <SignalTypeProfit>Short</SignalTypeProfit>
+  <MinimumR2>0</MinimumR2>
+  <MaximumR2>100</MaximumR2>
+  <MinimumEnableContangoAverage>-0.05</MinimumEnableContangoAverage>
+  <MaximumEnableContangoAverage>999</MaximumEnableContangoAverage>
+  <ContangoLossCutA>-0</ContangoLossCutA>
+  <ContangoLossCutB>-0.07</ContangoLossCutB>
+  <ContangoLossCutStepTrigger>0.99</ContangoLossCutStepTrigger>
+  <ContangoLossCutB2>0.1</ContangoLossCutB2>
+</V2VConfiguration>

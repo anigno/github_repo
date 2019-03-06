@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<CommonConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <EmailSender>anignorafinanceanalyzer@gmail.com</EmailSender>
+  <EmailSenderPassword>anignora</EmailSenderPassword>
+  <ExtractionOrder>ExtractorFromMsnGoogleYahoo</ExtractionOrder>
+  <MaxExtractionThreads>4</MaxExtractionThreads>
+  <ExtractorsDelayMs>15000</ExtractorsDelayMs>
+  <ExtractedDataResetMinutes>720</ExtractedDataResetMinutes>
+  <FtpServer>184.168.152.47</FtpServer>
+  <FtpUserName>anignora</FtpUserName>
+  <FtpPassword>Aa!12345</FtpPassword>
+  <UseFtpWebUpdater>true</UseFtpWebUpdater>
+  <WebsiteFtpIntervalMs>61000</WebsiteFtpIntervalMs>
+  <FtpBaseDirectoryUnLimited>AFA5_raluger</FtpBaseDirectoryUnLimited>
+  <FtpBaseDirectoryOptions>AFA5_snoitpo</FtpBaseDirectoryOptions>
+  <ReportsPath>_Reports</ReportsPath>
+  <ContangoManagerAverageCount>5</ContangoManagerAverageCount>
+  <ContangoManagerUpdateIntervalSec>90</ContangoManagerUpdateIntervalSec>
+  <ExtractionRtStartHour>8</ExtractionRtStartHour>
+</CommonConfiguration>

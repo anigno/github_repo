@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinFormApp", "WinFormApp\WinFormApp.csproj", "{AE1E74E2-835D-492D-B983-56CDADB7C04A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoraMediaManager", "AnignoraMediaManager\AnignoraMediaManager.csproj", "{61F8BE93-83A3-4041-A63E-045F5C831EF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoraDataTypes", "..\..\NET 2010\Anignora Library 2010\AnignoraDataTypes\AnignoraDataTypes.csproj", "{7B082431-65FB-4A04-9F43-051523D24DD6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AnignoraLibrary", "AnignoraLibrary", "{B47D5774-3A4E-48FC-8293-591E29870A79}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE1E74E2-835D-492D-B983-56CDADB7C04A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE1E74E2-835D-492D-B983-56CDADB7C04A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE1E74E2-835D-492D-B983-56CDADB7C04A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE1E74E2-835D-492D-B983-56CDADB7C04A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{61F8BE93-83A3-4041-A63E-045F5C831EF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{61F8BE93-83A3-4041-A63E-045F5C831EF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{61F8BE93-83A3-4041-A63E-045F5C831EF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{61F8BE93-83A3-4041-A63E-045F5C831EF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B082431-65FB-4A04-9F43-051523D24DD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B082431-65FB-4A04-9F43-051523D24DD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B082431-65FB-4A04-9F43-051523D24DD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B082431-65FB-4A04-9F43-051523D24DD6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7B082431-65FB-4A04-9F43-051523D24DD6} = {B47D5774-3A4E-48FC-8293-591E29870A79}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<AfaSystemNullConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SystemName>Null System</SystemName>
+  <SymbolsNames>
+    <string>DIA</string>
+    <string>UVXY</string>
+    <string>TVIX</string>
+    <string>VXZ</string>
+  </SymbolsNames>
+  <MaxDaysHoldingPos>6</MaxDaysHoldingPos>
+  <IsSystemActive>true</IsSystemActive>
+  <IsShowInUi>false</IsShowInUi>
+</AfaSystemNullConfiguration>

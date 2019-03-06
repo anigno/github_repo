@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<AfaSystemFirstOriginalConfiguration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SystemName>SystemFirstOriginal</SystemName>
+  <SymbolsNames>
+    <string>DIA</string>
+    <string>SPY</string>
+    <string>IJH</string>
+    <string>QQQ</string>
+    <string>XLE</string>
+    <string>XLF</string>
+    <string>EEM</string>
+    <string>XLF</string>
+  </SymbolsNames>
+  <MaxDaysHoldingPos>6</MaxDaysHoldingPos>
+  <IsSystemActive>true</IsSystemActive>
+  <IsShowInUi>true</IsShowInUi>
+  <RegularProfitCut>0.15</RegularProfitCut>
+  <RegularLossCut>-0.07</RegularLossCut>
+  <RegularMultiplier>0.125</RegularMultiplier>
+  <PositiveParam>21</PositiveParam>
+  <NegativeParam>79</NegativeParam>
+  <FormulaOneParam>9</FormulaOneParam>
+  <SmallAverage>39</SmallAverage>
+  <LargeAverage>190</LargeAverage>
+  <OtherAvg>3</OtherAvg>
+  <ProfitSymbol>
+    <string>DIA</string>
+    <string>SPY</string>
+    <string>IJH</string>
+    <string>QQQ</string>
+    <string>XLE</string>
+    <string>XLF</string>
+    <string>EEM</string>
+    <string>XLF</string>
+  </ProfitSymbol>
+  <NoneTriggerSymbols />
+  <RegularLossCutA>0</RegularLossCutA>
+  <RegularProfitCutA>0</RegularProfitCutA>
+  <MovingAvgShortDays>1</MovingAvgShortDays>
+  <MovingAvgLongDays>6</MovingAvgLongDays>
+</AfaSystemFirstOriginalConfiguration>

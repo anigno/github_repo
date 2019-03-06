@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AnignoSayItLoad2">
+</Property><Property Name="Solution File" Value="C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\AnignoSayItLoad2.sln">
+</Property><Property Name="User Options File" Value="C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\AnignoSayItLoad2.suo">
+</Property><Property Name="Date" Value="יום חמישי 08 יולי 2010">
+</Property><Property Name="Time" Value="11:02">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="AnignoSayItLoad2.sln" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2.sln">
+</Event><Event ErrorLevel="0" Project="" Source="AnignoSayItLoad2.suo" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2.suo">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\AnignoSayItLoad2.csproj" Description="Project file successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\AnignoSayItLoad2.csproj">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\FormMain.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\FormMain.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\FormMain.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\FormMain.Designer.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Program.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Program.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Properties\AssemblyInfo.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Properties\Resources.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Properties\Settings.Designer.cs" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Properties\Settings.settings" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\People.ico" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\People.ico">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\FormMain.resx" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\FormMain.resx">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\Properties\Resources.resx" Description="File successfully backed up as C:\Documents and Settings\anigno\Desktop\AnignoSayItLoad2\Backup\AnignoSayItLoad2\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\AnignoSayItLoad2.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\AnignoSayItLoad2.csproj" Description="Converted">
+</Event><Event ErrorLevel="1" Project="AnignoLibrary" Source="..\AnignoLibrary2008\AnignoLibrary\AnignoLibrary.csproj" Description="Warning: The project file is being backed up to a relative path that differs from the original solution relative path.  The difference in folder hierarchy may create problems in opening or building the backed up solution and project.">
+</Event><Event ErrorLevel="2" Project="AnignoLibrary" Source="..\AnignoLibrary2008\AnignoLibrary\AnignoLibrary.csproj" Description="Unable to open project file to perform upgrade.  ">
+</Event><Event ErrorLevel="0" Project="" Source="AnignoSayItLoad2.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="AnignoSayItLoad2.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="AnignoSayItLoad2" Source="AnignoSayItLoad2\AnignoSayItLoad2.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

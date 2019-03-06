@@ -1,0 +1,12 @@
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\bin\Debug\AnignoraUI.dll
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\bin\Debug\AnignoraUI.pdb
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.Common.ucWebBrowser.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.Grids.GridLists.GridListViewCustomScroll.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.Lists.ListTreeView.ResourceImages.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.Lists.ListViewFilesBrowse.ResourceMain.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.Selections.SelectionTimeInDay.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.TextBoxs.TextBoxBrowse.resources
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.csproj.GenerateResource.cache
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.csproj.CoreCompileInputs.cache
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.dll
+D:\HG\bitbucket\.Net Projects\AnignoraLibrary\AnignoraUI\obj\Debug\AnignoraUI.pdb

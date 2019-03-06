@@ -1,0 +1,30 @@
+﻿<Window x:Class="BindingExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="569.001" Width="814.837">
+    <Grid>
+        <TreeView Name="SomeTreeView"  HorizontalAlignment="Left" Height="219" Margin="10,10,0,0" VerticalAlignment="Top" Width="194">
+            <TreeViewItem Header="Root">
+                <TreeViewItem Header="Child1">
+                    <TreeViewItem Header="Child11"/>
+                </TreeViewItem>
+                <TreeViewItem Header="Child2">
+                    <TreeViewItem Header="Child21"/>
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>
+        <StackPanel Orientation="Vertical" HorizontalAlignment="Left" Height="353" VerticalAlignment="Top" Width="242" Background="#FFDDEFD9" Margin="209,10,0,0">
+            <TextBox x:Name="TextBoxSource" Height="26"  TextWrapping="Wrap" Text="Type some text" VerticalAlignment="Top"/>
+            <Label Content="{Binding ElementName=TextBoxSource,Path=Text}" Height="26"  VerticalAlignment="Top"/>
+            <Label Content="{Binding ElementName=SomeTreeView,Path=SelectedItem.Header}"  VerticalAlignment="Top" Height="26" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" Margin="2"/>
+            <Label Content="{Binding Source={x:Reference SomeTreeView}, Path=SelectedItem.Header }" HorizontalAlignment="Stretch"  VerticalAlignment="Top" Height="26" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" Margin="2"/>
+            <TextBox Text="{Binding SomeProperty,UpdateSourceTrigger=PropertyChanged}"  VerticalAlignment="Top" Height="26" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" Margin="2"/>
+            <TextBox Text="{Binding SomeProperty,UpdateSourceTrigger=LostFocus}"  VerticalAlignment="Top" Height="26" BorderBrush="Black" BorderThickness="1" VerticalContentAlignment="Center" Margin="2"/>
+        </StackPanel>
+        <StackPanel Margin="456,10,125.8,177.8" Background="#FFD0D6EC">
+            <ListBox ItemsSource="{Binding SomeCollection}" Height="100" Margin="2"/>
+            <ListBox Name="ItemsList" ItemsSource="{Binding Path=SomeCollection}" Height="100" Margin="2"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
