@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ApplicationData>
+  <!--Calculation-->
+  <ProfitCut>2.0</ProfitCut>
+  <ProfitCutDoubler>1.5</ProfitCutDoubler>
+  <LossCut>96</LossCut>
+  <MaxDaysHoldingPosition>6</MaxDaysHoldingPosition>
+  <UseDoubler>true</UseDoubler>
+  <DoublerMultiplier>2</DoublerMultiplier>
+  <RegularMultiplier>1</RegularMultiplier>
+  <DoublerStart>4</DoublerStart>
+  <MinDaysBetweenPosition>1</MinDaysBetweenPosition>
+  <PositiveParam>21</PositiveParam>
+  <NegativeParam>79</NegativeParam>
+  <FormulaOneParam>9</FormulaOneParam>
+  <SmallAverage>39</SmallAverage>
+  <LargeAverage>190</LargeAverage>
+  <OtherAvg>3</OtherAvg>
+  <mfiA>7</mfiA>
+  <mfiB>3</mfiB>
+  <mfiALow>20</mfiALow>
+  <mfiAHigh>80</mfiAHigh>
+  <UseMfi>false</UseMfi>
+
+  
+  <!--Email-->
+  <SenderEmail>anignorafinanceanalyzer@gmail.com</SenderEmail>
+  <SenderEmailPassword>anignora</SenderEmailPassword>
+  <ReceiversEmailList>
+    <string>anignorafinanceanalyzer@gmail.com</string>
+    <string>anigno@gmail.com</string>
+  </ReceiversEmailList>
+  <IsSendEmails>true</IsSendEmails>
+  <DailySendHour>23</DailySendHour>
+  <DailySendMinute>01</DailySendMinute>
+  <UpdatedLastSentDate>0001-01-01T00:00:00</UpdatedLastSentDate>
+  <!--Trades-->
+  <TradeSum>60000</TradeSum>
+  <TradeDevider>1</TradeDevider>
+  <!--Browsers-->
+  <BrowserA>https://www.milliontraders.com/colmex/colmexLogin.aspx</BrowserA>
+  <BrowserB>http://www.google.com/finance?q=INDEXSP:.INX</BrowserB>
+  <BrowserC>http://www.google.com/finance?q=INDEXDJX:.DJI,INDEXSP:.INX,INDEXNASDAQ:.IXIC</BrowserC>
+  <!--Extractors-->
+  <ExtractionOrder>YahooGoogle</ExtractionOrder>
+  <MaxExtractionThreads>5</MaxExtractionThreads>
+  <!--FTP-->
+  <FtpUpdate>true</FtpUpdate>
+  <FtpServerName>anigno.com</FtpServerName>
+  <FtpUsername>anigno2</FtpUsername>
+  <FtpPassword>Aa!123456</FtpPassword>
+  <FtpUpdateIntervalSec>30</FtpUpdateIntervalSec>
+
+</ApplicationData>

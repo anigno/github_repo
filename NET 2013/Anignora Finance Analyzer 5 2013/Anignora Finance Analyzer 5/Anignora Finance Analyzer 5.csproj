@@ -1,0 +1,385 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E33FAEBA-0719-4726-ACFB-702445EFDD79}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AnignoraFinanceAnalyzer5</RootNamespace>
+    <AssemblyName>AFA5</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Anignora.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AnignoraFinanceAnalyzer5.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="adimus.ertus.Logger">
+      <HintPath>..\..\3rdParty\adimus.ertus.Logger.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\3rdParty\log4net\1.2.10.0\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\ContangoShortsConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\ContangoVixConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\SpyOptionsConfigurationShorts.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\SpyOptionsConfigurationLongs.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstOptions\AfaSystemFirstOptionsConfigurationBase.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstOptions\AfaSystemTimeSpreadConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstOptions\AfaSystemButterflyConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstConfigurations\AfaSystemFirstOriginalStocksConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\CIntraDayConfigurationBase.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\CIntraDayLongConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\CIntraDayShortConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\ContangoShortsOptionsConfiguration.cs" />
+    <Compile Include="MainManagement\AfaWebSiteUpdater.cs" />
+    <Compile Include="Configurators\AfaSystemFirstConfigurator.cs" />
+    <Compile Include="Configurators\CommonConstants.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstConfigurations\AfaSystemFirstOriginalConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\SystemsConfigurationsExt.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\V2V_Configuration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\XIV_S_Configuration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\VXX_S_Configuration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\XIV_L_Configuration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\VXX_L_Configuration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstManyToSymbolNew\AfaSystemFirstManyToSymbolNewConfigurationBase.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemNullConfiguration.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemXivVxxConfiguration.cs" />
+    <Compile Include="MainManagement\AfaCommon.cs" />
+    <Compile Include="MainManagement\ContangoManager.cs" />
+    <Compile Include="Systems\ActiveSymbolsManager.cs" />
+    <Compile Include="Systems\AnalyzerResultBase.cs" />
+    <Compile Include="Systems\IActiveSymbolsManager.cs" />
+    <Compile Include="Systems\ProfitCalculationItem.cs" />
+    <Compile Include="Systems\SignalEnums.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstAnalyzer\FirstAnalyzer.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstAnalyzer\FirstAnalyzeResult.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstAnalyzer\FirstAnalyzerProtector.cs" />
+    <Compile Include="Configurators\Configuration\CommonConfiguration.cs" />
+    <Compile Include="Configurators\CommonConfigurator.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemConfigurationBase.cs" />
+    <Compile Include="Configurators\Configuration\AfaSystemFirstConfigurationBase.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstCalculator\FirstCalculatorResult.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstCalculator\FirstCalculator.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstCalculator\AfaFirstStateMachines\FirstCalculateProfitStateMachineNoDoubler.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstCalculator\AfaFirstStateMachines\FirstSetSignalsStateMachine.cs" />
+    <Compile Include="Systems\SystemFirst\AfaFirstCalculator\IFirstCalculator.cs" />
+    <Compile Include="Systems\SystemFirst\AfaSystemFirst.cs" />
+    <Compile Include="Systems\SystemOptions\BlackAndScholes.cs" />
+    <Compile Include="Systems\SystemOptions\SystemOptionsHelper.cs" />
+    <Compile Include="Systems\SystemOptions\SystemFirstOptions.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemCIntraDayLong.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemCIntraDayShort.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemContangoHelper.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemContangoShorts.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemContangoVix.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemXivVxx.cs" />
+    <Compile Include="Systems\SystemsExtended\SystemCalculationHelper.cs" />
+    <Compile Include="Systems\SystemSymbolPair.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\ActiveSymbols\ActiveSymbolItemMain.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\HistorySymbols\AfaSystemFirstHistorySymbolGridRow.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemManyToSymbolNew.cs" />
+    <Compile Include="Systems\SystemsExtended\AfaSystemNull.cs" />
+    <Compile Include="Systems\SystemsExtended\SignalOpenCloseData.cs" />
+    <Compile Include="Systems\SystemsExtended\SystemManyToSymbolHelper.cs" />
+    <Compile Include="UI\CommonUI.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\ActiveSymbols\ActiveSymbolItem.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\ActiveSymbols\UserControlActiveSymbols.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\ActiveSymbols\UserControlActiveSymbols.Designer.cs">
+      <DependentUpon>UserControlActiveSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\ButtonSystemOpen.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\ucNumPer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\ucNumPer.Designer.cs">
+      <DependentUpon>ucNumPer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\ucResult.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\ucResult.Designer.cs">
+      <DependentUpon>ucResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\GeneralSymbols\GeneralSymbolItem.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\GeneralSymbols\UserControlGeneralSymbols.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\GeneralSymbols\UserControlGeneralSymbols.Designer.cs">
+      <DependentUpon>UserControlGeneralSymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\HistorySymbols\IHistoryGridRowItem.cs" />
+    <Compile Include="UI\Controls\SystemSpecific\HistorySymbols\UserControlHystorySymbols.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\HistorySymbols\UserControlHystorySymbols.Designer.cs">
+      <DependentUpon>UserControlHystorySymbols.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\UserControlSystem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\Controls\SystemSpecific\UserControlSystem.Designer.cs">
+      <DependentUpon>UserControlSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\AfaBaseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainManagement\MainManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Systems\SystemFirst\AfaSystemFirstBase.cs" />
+    <Compile Include="Systems\AfaSystemBase.cs" />
+    <Compile Include="UI\Forms\FormMdi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormMdi.Designer.cs">
+      <DependentUpon>FormMdi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormSystem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormSystem.Designer.cs">
+      <DependentUpon>FormSystem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\Forms\FormSystemsCalculate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\Forms\FormSystemsCalculate.Designer.cs">
+      <DependentUpon>FormSystemsCalculate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainManagement\ReportsCreator.cs" />
+    <EmbeddedResource Include="UI\Controls\SystemSpecific\ActiveSymbols\UserControlActiveSymbols.resx">
+      <DependentUpon>UserControlActiveSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\ucNumPer.resx">
+      <DependentUpon>ucNumPer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\ucResult.resx">
+      <DependentUpon>ucResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\SystemSpecific\GeneralSymbols\UserControlGeneralSymbols.resx">
+      <DependentUpon>UserControlGeneralSymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\SystemSpecific\HistorySymbols\UserControlHystorySymbols.resx">
+      <DependentUpon>UserControlHystorySymbols.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Controls\SystemSpecific\UserControlSystem.resx">
+      <DependentUpon>UserControlSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\AfaBaseForm.resx">
+      <DependentUpon>AfaBaseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UI\Forms\FormMdi.resx">
+      <DependentUpon>FormMdi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormSystem.resx">
+      <DependentUpon>FormSystem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\Forms\FormSystemsCalculate.resx">
+      <DependentUpon>FormSystemsCalculate.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="config.log4net">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RunAfa5_All.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RunAfa5_Options.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="RunAfa5_Regular.bat">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraCommonAndHelpers\AnignoraCommonAndHelpers.csproj">
+      <Project>{E5D8C6FC-B5A6-48D8-849D-86E2F8AA6527}</Project>
+      <Name>AnignoraCommonAndHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraCommunication\AnignoraCommunication.csproj">
+      <Project>{5EDFAE95-D230-4B77-99D4-9FC5329FCAD5}</Project>
+      <Name>AnignoraCommunication</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraDataTypes\AnignoraDataTypes.csproj">
+      <Project>{7B082431-65FB-4A04-9F43-051523D24DD6}</Project>
+      <Name>AnignoraDataTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraIO\AnignoraIO.csproj">
+      <Project>{146F3906-9908-4F11-9836-2A26584BB247}</Project>
+      <Name>AnignoraIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraProcesses\AnignoraProcesses.csproj">
+      <Project>{9CB4A2AD-D2BD-4CA2-B325-994DBA77D851}</Project>
+      <Name>AnignoraProcesses</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2013\AnignoraUI\AnignoraUI.csproj">
+      <Project>{028AE9FE-91DE-4FFB-8DDD-030950DA80B9}</Project>
+      <Name>AnignoraUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AfaDataExtraction\AfaDataExtraction.csproj">
+      <Project>{FBA827B0-3BFD-4287-AFBB-6F88426D4786}</Project>
+      <Name>AfaDataExtraction</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Rar.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\ExternalFiles\ApplicationProtector.dll">
+      <Link>Systems\SystemFirst\AfaFirstAnalyzer\ApplicationProtector.dll</Link>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <Content Include="Html Samples\Afa HomePage\Images\Afa5.4_1.jpg" />
+    <Content Include="Html Samples\Afa HomePage\Images\Afa5.4_10.jpg" />
+    <Content Include="Html Samples\Afa HomePage\Images\Afa5.4_4.jpg" />
+    <Content Include="Html Samples\Afa HomePage\Images\Afa5.4_6.jpg" />
+    <Content Include="Html Samples\Afa HomePage\index.html" />
+    <Content Include="Anignora.ico" />
+    <None Include="Html Samples\index.html">
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Html Samples\favicon.ico" />
+    <Content Include="Html Samples\Symbols.html">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Html Samples\systems.html">
+      <SubType>Designer</SubType>
+    </Content>
+    <None Include="Resources\Calculator.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>RD /S /Q configuration
+RD /S /Q HistoryData
+</PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>rar.exe a -r -ep1 -pmar651!! -x_Logs -xRar.exe AFA5.4.00.00.rar "*.*"</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

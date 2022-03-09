@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CodeLayout xmlns="http://regionerate.net/schemas/0.7.3.0/CodeLayout.xsd">
+  <ForEach Type="Class" SeparatingLines="2">
+
+    <CreateRegion Title="Enums" PadFirstChild="0" PadLastChild="0">
+      <PutEnums>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutEnums>
+    </CreateRegion>
+
+    <CreateRegion Title="Const Fields" PadFirstChild="0" PadLastChild="0">
+      <PutFields>
+        <Where>
+          <Const Equals="true"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutFields>
+    </CreateRegion>
+
+    <CreateRegion Title="Static Fields" PadFirstChild="0" PadLastChild="0">
+      <PutFields>
+        <Where>
+          <Static Equals="true"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutFields>
+    </CreateRegion>
+
+    <CreateRegion Title="Fields" PadFirstChild="0" PadLastChild="0">
+      <PutFields>
+        <OrderBy>
+          <Type/>
+        </OrderBy>
+      </PutFields>
+    </CreateRegion>
+
+
+    <CreateRegion Title="Tests" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <AnyAttribute Matches="^Test"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+    </CreateRegion>
+
+    <CreateRegion Title="Static Constructor" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <IsConstructor Equals="true"/>
+          <Static Equals="true"/>
+        </Where>
+        <OrderBy>
+          <ParametersCount Direction="Descending"/>
+        </OrderBy>
+      </PutMethods>
+    </CreateRegion>
+
+    <CreateRegion Title="Constructors" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <IsConstructor Equals="true"/>
+        </Where>
+        <OrderBy>
+          <ParametersCount Direction="Descending"/>
+        </OrderBy>
+      </PutMethods>
+    </CreateRegion>
+
+    <CreateRegion Title="Overridden Properties" PadFirstChild="0" PadLastChild="0">
+      <PutProperties>
+        <Where>
+          <InheritanceModifier Equals="Override"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutProperties>
+    </CreateRegion>
+
+
+    <CreateRegion Title="Properties" PadFirstChild="0" PadLastChild="0">
+      <PutProperties>
+        <OrderBy>
+          <Type/>
+        </OrderBy>
+      </PutProperties>
+    </CreateRegion>
+
+
+    <CreateRegion Title="Events" PadFirstChild="0" PadLastChild="0">
+      <PutEvents>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutEvents>
+    </CreateRegion>
+    
+    <CreateRegion Title="Delegates" PadFirstChild="0" PadLastChild="0">
+      <PutDelegates>
+        <OrderBy>
+          <Name Direction="Ascending"/>
+        </OrderBy>
+      </PutDelegates>
+    </CreateRegion>
+
+    <CreateRegion Title="Event Handlers" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Name Matches="\w+_\w+"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+    </CreateRegion>
+    
+    <CreateRegion Title="Static Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Static Equals="true"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+
+    <CreateRegion Title="Overridden Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <InheritanceModifier Equals="Override"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Private Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Access Equals="Private"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Public Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Access Equals="Public"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Protected Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Access Equals="Protected"/>
+          <InheritanceModifier Equals="None"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Virtual Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <Access Equals="Protected"/>
+          <InheritanceModifier Equals="Virtual"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Abstract Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <Where>
+          <InheritanceModifier Equals="Abstract"/>
+        </Where>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Methods" PadFirstChild="0" PadLastChild="0">
+      <PutMethods>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutMethods>
+      <PutEvents/>
+    </CreateRegion>
+    <CreateRegion Title="Nested Classes" PadFirstChild="0" PadLastChild="0">
+      <PutNestedClasses>
+        <OrderBy>
+          <Name/>
+        </OrderBy>
+      </PutNestedClasses>
+    </CreateRegion>
+    
+    
+    
+  </ForEach>
+
+	<Configuration>
+		<Symbol>
+      <Wrapper Prefix="(------------------ " Suffix=" ------------------)"/>
+		</Symbol>
+		<Unpack>
+		  <Regions ThatMatch="\[rgn\]" />
+		</Unpack>
+		<Rendering ShowCount="false" Tabs="2" />
+  </Configuration>
+  </CodeLayout>

@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C804FD0D-28C9-4653-A58E-9FD1A46DFBD8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <HintPath>..\..\3rd Party\NUnit 2.5.8 Dlls\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormTest.Designer.cs">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SampleDataDataGridViewAutoItem.cs" />
+    <Compile Include="temp.cs" />
+    <Compile Include="TestActiveSymbolsManager.cs" />
+    <Compile Include="TestCommon.cs" />
+    <Compile Include="TestContango.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestExtractors.cs" />
+    <Compile Include="TestUI.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Anignora Library 2010\AnignoraCommonAndHelpers\AnignoraCommonAndHelpers.csproj">
+      <Project>{E5D8C6FC-B5A6-48D8-849D-86E2F8AA6527}</Project>
+      <Name>AnignoraCommonAndHelpers</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2010\AnignoraDataTypes\AnignoraDataTypes.csproj">
+      <Project>{7B082431-65FB-4A04-9F43-051523D24DD6}</Project>
+      <Name>AnignoraDataTypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Anignora Library 2010\AnignoraUI\AnignoraUI.csproj">
+      <Project>{028AE9FE-91DE-4FFB-8DDD-030950DA80B9}</Project>
+      <Name>AnignoraUI</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AfaDataExtraction\AfaDataExtraction.csproj">
+      <Project>{FBA827B0-3BFD-4287-AFBB-6F88426D4786}</Project>
+      <Name>AfaDataExtraction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Anignora Finance Analyzer 5\Anignora Finance Analyzer 5.csproj">
+      <Project>{E33FAEBA-0719-4726-ACFB-702445EFDD79}</Project>
+      <Name>Anignora Finance Analyzer 5</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormTest.resx">
+      <DependentUpon>FormTest.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

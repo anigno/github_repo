@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+  <configSections>
+    <section name="log4net" type="log4net.Config.Log4NetConfigurationSectionHandler,log4net" />
+  </configSections>
+  <appSettings>
+    <!-- To enable internal log4net logging specify the 
+		     following appSettings key -->
+    <!-- <add key="log4net.Internal.Debug" value="true"/> -->
+  </appSettings>
+  <log4net>
+    <!-- Definitions of appenders reconized by the logger that may be in use in run time -->
+    <!-- 
+		H Rolling Log File Appender is an appender that writes to log files till       
+		reaching a given size and then starts to write to another file. The roll is applied
+		after reaching MaxSizeRollBackups - then the appender goes to the first file and   
+		overrides it with the new log messages. Thus the application does not exceed the   
+		quota of MaxSizeRollBackups number of files.                                       
+		File - the path of the log file + the basic name of the log file. DO NOT CHANGE 
+		CountDirection = 1 - the postfix of the log file is incremented.  DO NOT CHANGE 
+		AppendToFile = false - start a new file when starting a new run.  DO NOT CHANGE 
+		MaxSizeRollBackups - The number of files to create before starting to override  
+		the first file.                                                                 
+		MaximumFileSize - The maximum size of one log file, before starting to log to    
+		a new file. Use B, KB or MB to specify its size. For performance considerations,     
+		don't cross 1 GB size.                                                             
+		StaticLogFileName - allow changes in basic name of the log file. DO NOT CHANGE  
+		layout pattern - the format of one message. DO NOT DARE TO THINK OF CHANGING IT
+		-->
+    <appender name="HRollingLogFileAppender" type="adimus.ertus.Logger.AsyncRollingFileAppender,adimus.ertus.Logger">
+      <param name="File" value="Log\\log.txt" />
+      <param name="CountDirection" value="1" />
+      <param name="AppendToFile" value="true" />
+      <param name="MaxSizeRollBackups" value="10" />
+      <param name="MaximumFileSize" value="500KB" />
+      <param name="RollingStyle" value="Size" />
+      <param name="StaticLogFileName" value="false" />
+      <layout type="log4net.Layout.PatternLayout,log4net">
+        <param name="Header" value="" />
+        <param name="Footer" value="" />
+        <param name="ConversionPattern" value="$%d|%t|%p|%c|%m%n" />
+      </layout>
+    </appender>
+    <appender name="RollingLogFileAppender" type="adimus.ertus.Logger.ExtendedRollingFileAppender,adimus.ertus.Logger">
+      <param name="File" value="Log\\log.txt" />
+      <param name="CountDirection" value="1" />
+      <param name="AppendToFile" value="true" />
+      <param name="MaxSizeRollBackups" value="10" />
+      <param name="MaximumFileSize" value="500KB" />
+      <param name="RollingStyle" value="Size" />
+      <param name="StaticLogFileName" value="false" />
+      <layout type="log4net.Layout.PatternLayout,log4net">
+        <param name="Header" value="" />
+        <param name="Footer" value="" />
+        <param name="ConversionPattern" value="$%d|%t|%p|%c|%m%n" />
+      </layout>
+    </appender>
+    <!-- layout pattern - the format of one message.                                     -->
+    <appender name="OutputDebugStringAppender" type="log4net.Appender.OutputDebugStringAppender">
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="%d [%t] %-5p %c [%x] - %m%n" />
+      </layout>
+    </appender>
+    <!-- Console Appender is an appender that writes to log to the console.              -->
+    <!-- layout pattern - the format of one message.                                     -->
+    <appender name="ConsoleAppender" type="log4net.Appender.ConsoleAppender">
+      <layout type="log4net.Layout.PatternLayout">
+        <param name="ConversionPattern" value="$%d|%t|%p|%c|%m%n" />
+      </layout>
+    </appender>
+    <!-- The definition of the root logger parameters.                                   -->
+    <root>
+      <priority value="ALL" />
+      <appender-ref ref="HRollingLogFileAppender" />
+    </root>
+    
+    <logger name="NHibernate">
+      <level value="Warn" />
+    </logger>
+
+
+    <!--<logger name="adimus.ertus.Channels">
+      <level value="WARN" />
+    </logger>-->  
+
+    <logger name="adimus.BlueBird.BL.EopGateway.EopRidaAdapter">
+      <level value="DEBUG" />
+    </logger>
+    <logger name="adimus.BlueBird.BL.EopGateway.EopUdpGateway">
+      <level value="WARN" />
+    </logger>
+    <logger name="adimus.BlueBird.BL.LosGateway">
+      <level value="WARN" />
+    </logger>
+
+  </log4net>
+</configuration>

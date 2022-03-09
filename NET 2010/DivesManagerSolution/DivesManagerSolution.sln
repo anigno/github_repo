@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivesManager", "DivesManager\DivesManager.csproj", "{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoLibraryMobile", "..\AnignoSolutionsMobile2008\AnignoLibraryMobile\AnignoLibraryMobile.csproj", "{4E7ED33D-1B4C-4E98-BF5A-DC820A009FFD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivesManagerLibrary", "DivesManagerLibrary\DivesManagerLibrary.csproj", "{ECAAB1C9-CAAE-4D04-BEB2-4F62ADA36362}"
+EndProject
+Project("{B900F1C2-3D47-4FEC-85B3-04AAF18C3634}") = "DivesManagerInstallCab", "DivesManagerInstallCab\DivesManagerInstallCab.vddproj", "{809CE36C-47D1-4995-91F3-C7B43DCFAB12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2CB4B1E4-BCFF-423E-920D-8A32A57B8055}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4E7ED33D-1B4C-4E98-BF5A-DC820A009FFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E7ED33D-1B4C-4E98-BF5A-DC820A009FFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E7ED33D-1B4C-4E98-BF5A-DC820A009FFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E7ED33D-1B4C-4E98-BF5A-DC820A009FFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAAB1C9-CAAE-4D04-BEB2-4F62ADA36362}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAAB1C9-CAAE-4D04-BEB2-4F62ADA36362}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAAB1C9-CAAE-4D04-BEB2-4F62ADA36362}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAAB1C9-CAAE-4D04-BEB2-4F62ADA36362}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809CE36C-47D1-4995-91F3-C7B43DCFAB12}.Debug|Any CPU.ActiveCfg = Debug
+		{809CE36C-47D1-4995-91F3-C7B43DCFAB12}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
