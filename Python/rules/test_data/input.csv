@@ -1,0 +1,4 @@
+1,1578455846,aaaa,http,10.0.0.1
+1,1578455846,bbbb,ssl,10.1.1.1
+1,1578455846,cccc,ssl,10.1.1.8
+1,1578455846,dddd,ssl,10.1.1.8 (www.apple.com lookup returned 10.1.1.8)

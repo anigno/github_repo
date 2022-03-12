@@ -1,0 +1,18 @@
+digitalWrite(XX)
+D0-D8 (16,5,4,0,2,14,12,13,15)(gpioXX)
+LED pins small 2 ,big 16
+LOW 0v HIGH 3.3V
+
+digitalRead(XX)
+D0-D8 (16,5,4,0,2,14,12,13,15)
+LOW 0v HIGH 3.3V
+
+analogWrite(XX)
+D2,D5,D6,D8 (4,14,12,15)
+0-1024 0v-3.3v
+
+analogRead(A0)
+0v-3.3V 0-1024
+
+
+

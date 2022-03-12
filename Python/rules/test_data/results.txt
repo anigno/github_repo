@@ -1,0 +1,4 @@
+1 aaaa user endpoint
+1 bbbb ct
+1 cccc ct
+1 dddd iphone

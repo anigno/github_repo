@@ -1,0 +1,7 @@
+esp8266 e12 install arduino ide
+* add library ardufruit 8266 in libraries
+* boards in file->properties->additionalBoards
+https://dl.espressif.com/dl/package_esp32_index.json
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
+* install esp8266 in boards manager
+* add library DFRobotDFPlayerMini

@@ -1,0 +1,30 @@
+https://www.youtube.com/watch?v=Wv85y7G2uMQ
+https://github.com/digistump/DigistumpArduino/releases
+https://github.com/digistump/DigistumpArduino
+
+http://digistump.com/package_digistump_index.json
+
+1. disconnect USB
+2. compile and upload
+3. reconnect USB
+Thank you
+
+Pin 0 ? I2C SDA, PWM (LED on Model B)
+Pin 1 ? PWM (LED on Model A)
+Pin 2 ? I2C SCK, Analog In
+Pin 3 ? Analog In (also used for USB+ when USB is in use)
+Pin 4 ? PWM, Analog (also used for USB- when USB is in use)
+Pin 5 ? Analog In 
+
+void setup() {                
+  // initialize the digital pin as an output.
+  pinMode(1, OUTPUT); //LED on Model A  or Pro
+}
+
+// the loop routine runs over and over again forever:
+void loop() {
+  digitalWrite(1, HIGH);
+  delay(200);               // wait for a second
+  digitalWrite(1, LOW); 
+  delay(800);               // wait for a second
+}
