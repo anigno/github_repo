@@ -12,21 +12,19 @@ class LanDiscovery:
 
     def __init__(self):
         test_ports = LanDiscovery.WINDOWS_PORTS
-        self.connections_generator = self.generate_connections_test('192.168.1.', test_ports)
+        self.connections_generator = self._generate_connections_test('192.168.1.', test_ports)
         self.found_hostnames = {}
 
-    def generate_connections_test(self, base_ip: str, test_ports: Iterator) -> tuple:
+    def _generate_connections_test(self, base_ip: str, test_ports: Iterator) -> tuple:
         for i in range(256):
             ip = base_ip + str(i)
             for p in test_ports:
                 yield (ip, p)
 
-    def test_connection(self, ip_end_point_tuple) -> int:
+    def _test_connection_and_print(self, ip_end_point_tuple) -> int:
         ip = ip_end_point_tuple[0]
         port = ip_end_point_tuple[1]
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
-            sock.settimeout(LanDiscovery.CONNECTION_TIMEOUT)
-            result = sock.connect_ex((ip, port))
+        result = self.test_connection(ip, port)
         if result == 0:
             hostname = socket.gethostbyaddr(ip)[0]
             if hostname not in self.found_hostnames:
@@ -34,9 +32,15 @@ class LanDiscovery:
                 print(f'result {hostname} {ip}')
         return result
 
+    def test_connection(self, ip: str, port: int):
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(LanDiscovery.CONNECTION_TIMEOUT)
+            result = sock.connect_ex((ip, port))
+            return result
+
     def start(self, max_workers: int):
         with concurrent.futures.ThreadPoolExecutor(max_workers=max_workers) as executor:
-            final_result = executor.map(self.test_connection, self.connections_generator)
+            final_result = executor.map(self._test_connection_and_print, self.connections_generator)
 
 if __name__ == '__main__':
     lan_discovery = LanDiscovery()
