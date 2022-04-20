@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "myData", "http://localhost/myData/myData.vbproj", "{4B15555C-B98D-4BD3-9FF7-E1C1657CE521}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{4B15555C-B98D-4BD3-9FF7-E1C1657CE521}.Debug.ActiveCfg = Debug|.NET
+		{4B15555C-B98D-4BD3-9FF7-E1C1657CE521}.Debug.Build.0 = Debug|.NET
+		{4B15555C-B98D-4BD3-9FF7-E1C1657CE521}.Release.ActiveCfg = Release|.NET
+		{4B15555C-B98D-4BD3-9FF7-E1C1657CE521}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

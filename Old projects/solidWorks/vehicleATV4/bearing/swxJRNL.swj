@@ -1,0 +1,91 @@
+' ******************************************************************************
+' swxJRNL.swj - journal recorded on 06/30/04 by anigno
+' *****************************************************************************
+Dim swApp As Object
+Dim Part As Object
+Dim boolstatus As Boolean
+Dim longstatus As Long, longwarnings As Long
+Dim FeatureData As Object
+Dim Feature As Object
+Dim Component As Object
+Sub main()
+
+Set swApp = Application.SldWorks
+
+Set Part = swApp.OpenDoc6 ("E:\my documents\Programing\solidWorks\vehicleATV4\bearing\assmBearing.SLDASM", 2, 0, "", longstatus, longwarnings)
+Set Part = swApp.ActivateDoc ("assmBearing")
+swApp.ActiveDoc.ActiveView.FrameLeft = 0
+swApp.ActiveDoc.ActiveView.FrameTop = 0
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.ShowNamedView2 "*Dimetric", 9
+Part.ActiveView().RotateAboutCenter 0, -0.139732
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.199617
+Part.ActiveView().RotateAboutCenter 0.0270383, -0.339349
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.11977
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.11977
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.0798468
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.129751
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.069866
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.0598851
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.00998085
+Part.ActiveView().RotateAboutCenter 0, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.0270383, -0.0499043
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.0270383, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.00998085
+Part.ActiveView().RotateAboutCenter 0.0360511, -0.00998085
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.00998085
+Part.ActiveView().RotateAboutCenter 0.0180255, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.0199617
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.00998085
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+Part.ActiveView().RotateAboutCenter 0.00901277, -0.0499043
+Part.ActiveView().RotateAboutCenter 0, -0.069866
+Part.ActiveView().RotateAboutCenter 0, -0.0898277
+Part.ActiveView().RotateAboutCenter 0, -0.0399234
+Part.ActiveView().RotateAboutCenter 0, -0.0399234
+Part.ActiveView().RotateAboutCenter -0.00901277, -0.0499043
+Part.ActiveView().RotateAboutCenter -0.00901277, -0.0299426
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+Part.ActiveView().RotateAboutCenter -0.00901277, 0
+Part.ActiveView().RotateAboutCenter -0.0450638, 0
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.02049826714935, 0.06033400805175, 0, False, 0, Nothing)
+Part.TranslateComponent
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "FACE", 0.01521404376615, 0.04743113571745, 0, False, 0, Nothing)
+Part.TranslateComponent
+boolstatus = Part.Extension.SelectByID("", "EDGE", 0.04750674471907, 0.05023613568245, 0.01967465192314, False, 0, Nothing)
+Part.TranslateComponent
+Part.ActiveView().RotateAboutCenter 0, 0.0199617
+Part.ActiveView().RotateAboutCenter 0.0180255, 0.0399234
+Part.ActiveView().RotateAboutCenter 0.0360511, 0.0898277
+Part.ActiveView().RotateAboutCenter 0.0180255, 0.069866
+Part.ActiveView().RotateAboutCenter 0.00901277, 0.0598851
+Part.ActiveView().RotateAboutCenter 0, 0.0499043
+Part.ActiveView().RotateAboutCenter -0.0180255, 0.0898277
+Part.ActiveView().RotateAboutCenter -0.0180255, 0.0299426
+Part.ActiveView().RotateAboutCenter -0.0180255, 0.069866
+Part.ActiveView().RotateAboutCenter -0.0270383, 0.0399234
+Part.ActiveView().RotateAboutCenter -0.0180255, 0.0499043
+Part.ActiveView().RotateAboutCenter -0.00901277, 0.0299426
+Part.ActiveView().RotateAboutCenter -0.00901277, 0.0399234
+Part.ActiveView().RotateAboutCenter -0.00901277, 0
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+Part.ActiveView().RotateAboutCenter -0.0270383, -0.0798468
+Part.ActiveView().RotateAboutCenter -0.00901277, -0.0499043
+Part.ActiveView().RotateAboutCenter -0.0180255, -0.0499043
+Part.ActiveView().RotateAboutCenter 0, -0.0199617
+Part.ActiveView().RotateAboutCenter -0.00901277, -0.00998085
+Part.ActiveView().RotateAboutCenter -0.00901277, -0.0299426
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+Part.ActiveView().RotateAboutCenter 0, -0.00998085
+boolstatus = Part.Extension.SelectByID("", "EDGE", 0.05048895577954, 0.04819660395368, 0.01980745633972, False, 0, Nothing)
+Part.TranslateComponent
+swApp.ActiveDoc.ActiveView.FrameState = 1
+Part.ClearSelection2 True
+swApp.ExitApp
+End Sub

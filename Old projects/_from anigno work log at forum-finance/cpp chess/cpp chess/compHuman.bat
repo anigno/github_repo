@@ -1,0 +1,1 @@
+cppChessV2.exe compHuman 5

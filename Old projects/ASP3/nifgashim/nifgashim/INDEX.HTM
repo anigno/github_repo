@@ -1,0 +1,117 @@
+<html>
+<head>
+<meta NAME="GENERATOR" Content="Microsoft FrontPage 5.0">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<meta name="ms.locale" content="HE">
+<title>!נפגשים</title>
+
+<body bgcolor="#fefff6" text="#ff6600" link="#ff3300" vlink="#ff3300" alink="#ff3300">
+<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="100%" height="558">
+  <tr>
+    <td width="29%" background="images/leftRoze.gif" rowspan="9" height="505" align="right" valign="bottom">
+    <A href="mailto:anigno@softhome.net" style="FONT-WEIGHT: 700">EMAIL</a></td>
+    <td width="71%" background="images/nifgashim.gif" height="82" colspan="4">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="36%" height="220" colspan="2" rowspan="4" align="right" valign="top">
+    
+
+
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH="100%" HEIGHT="100%">
+ <PARAM NAME=movie VALUE="banner01.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=wmode VALUE=transparent> <PARAM NAME=bgcolor VALUE=#000000> 
+  <EMBED src="banner01.swf" quality=high wmode=transparent bgcolor=#000000  WIDTH=100% HEIGHT=100% TYPE="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash"></EMBED></OBJECT>
+
+    
+    </td>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="55" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="55" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="55" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="55" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="55" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="55" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="54" align="right" valign="top" dir="rtl">
+    &nbsp;</td>
+    <td width="18%" height="54" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="54" align="right" valign="top">
+    <IMG border=0 height=13 id=IMG1 src="images/line_marker.gif" width=12 ><span lang="he"><font size="4" color="#ff9900"><A href="login.asp">כניסה</a></font></span><p>&nbsp;</td>
+    <td width="17%" height="54" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="54" align="right" valign="top" dir="rtl">
+    &nbsp;</td>
+    <td width="18%" height="54" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="54" align="right" valign="top">
+    <IMG border=0 height=13 id=IMG2 src="images/line_marker.gif" width=12 ><span lang="he"><font size="4" color="#ff9900"><A href="join.asp">הצטרפות</a></font></span><p>&nbsp;</td>
+    <td width="17%" height="54" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="18%" height="39" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="39" align="right" valign="top">&nbsp;</td>
+    <td width="18%" height="39" align="right" valign="top">&nbsp;</td>
+    <td width="17%" height="39" align="right" valign="top">&nbsp;</td>
+  </tr>
+  <tr>
+    <td width="29%" height="52">
+    &nbsp;</td>
+    <td width="71%" height="52" colspan="4">&nbsp;</td>
+  </tr>
+</table>
+<p>&nbsp;</p>
+</body>
+</html>
+<!-- ********** script **********-->
+<script language="vbscript">
+	txtAllow="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-_אבגדהוזחטיכלמנסעפצקרשתףךץןם"
+
+'check if txt include chars from txtAllow only
+'input: txt as string,txtAllow as string
+'output: 0 not OK, 1 OK
+function checkText(txt,txtAllow)
+	dim txtOK
+	txtOK=1
+	for a=1 to len(txt)
+		if instr(1,txtAllow,mid(txt,a,1))=0 then txtOK=0
+	next
+	'check if text length=0
+	if len(txt)=0 then txtOK=0
+	checkText=txtOK
+end function
+
+	sub btnEnter_onclick()
+		formOK=1
+		tError=""
+		if checkText(form1.txtUsername.value,txtAllow)=0 then
+			formOK=0
+			tError=tError & "<br><font size=1>טעות בהקלדת שם המשתמש</font>"
+		end if
+		if checkText(form1.txtPasswd.value,txtAllow)=0 then
+			formOK=0
+			tError=tError & "<br><font size=1>טעות בהקלדת הסיסמה</font>"
+		end if
+		if formOK=0 then
+			mError.innerHTML=tError
+		else
+			form1.action="loginCheckExist.asp"
+			form1.submit
+		end if
+	end sub
+</script>
+<p>&nbsp;</p>

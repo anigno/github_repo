@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{BDD4A1A1-7A1F-11D0-AC13-00A0C91E29D5}") = "lala/ipFinder", "ipFinder.vip", "{031766CD-C11A-4D59-8591-B6C245776933}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {031766CD-C11A-4D59-8591-B6C245776933}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {031766CD-C11A-4D59-8591-B6C245776933}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

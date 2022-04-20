@@ -1,0 +1,28 @@
+<html>
+<head>
+<!--
+This file retrieved from the JS-Examples archives
+http://www.js-examples.com
+1000s of free ready to use scripts, tutorials, forums.
+Author: JS-Examples - http://www.js-examples.com/ 
+-->
+</head>
+<body>
+<script type=text/javascript>
+var _w = null;
+var r=12345;
+function createNew() {
+  _w = window.open();
+  _w.document.open();
+  _w.document.write('<html><head><title>New Window</title></head><body>');
+  _w.document.write('<a href="javascript:opener.close()">Close my opener!</a><br>');
+  _w.document.write('<a href="javascript:opener.document.write(12345)">write12345</a>');
+  _w.document.write('</body></html>');
+  _w.document.close();
+}
+</script>
+<a href="javascript:createNew()">Create New Window</a>
+
+
+</body>
+</html>

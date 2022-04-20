@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoFileSync", "AnignoFileSync\AnignoFileSync.csproj", "{DBA173F9-928A-41DA-B6E4-809099F1BEC9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoLibrary", "D:\My Documents\_Anigno Documents\Programing\CSharp2008\AnignoLibrary2008\AnignoLibrary\AnignoLibrary.csproj", "{73C4FAF3-2216-48B5-927B-3B34875ED470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DBA173F9-928A-41DA-B6E4-809099F1BEC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBA173F9-928A-41DA-B6E4-809099F1BEC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBA173F9-928A-41DA-B6E4-809099F1BEC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBA173F9-928A-41DA-B6E4-809099F1BEC9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

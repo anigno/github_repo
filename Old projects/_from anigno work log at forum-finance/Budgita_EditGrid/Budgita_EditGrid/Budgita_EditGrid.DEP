@@ -1,0 +1,19 @@
+[Version]
+Version=1.0.0.0
+
+[Budgita_EditGrid.ocx <0009>]
+Dest=$(AppPath)
+Date=30/07/99
+Time=03:40
+Version=1.0.0.0
+CABFilename=Budgita_EditGrid.CAB
+CABINFFile=Budgita_EditGrid.INF
+Uses1=MSVBVM60.DLL
+Uses2=OLEAUT32.DLL
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=MSFLXGRD.OCX
+Uses8=MSHFLXGD.OCX
+Uses9=MSSTKPRP.DLL

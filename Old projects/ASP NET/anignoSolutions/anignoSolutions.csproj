@@ -1,0 +1,321 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{46BEF153-29F0-4FB8-B8D0-1CE534FDBE3D}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "anignoSolutions"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                PreBuildEvent = ""
+                PostBuildEvent = ""
+                RootNamespace = "anignoSolutions"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\WINNT\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "anignoSolutions.mdb"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "global.asa"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax"
+                    SubType = "Component"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Global.asax.cs"
+                    DependentUpon = "Global.asax"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Global.asax.resx"
+                    DependentUpon = "Global.asax.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Web.config"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_functions\functions01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\aboutImage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\anignoLogo.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\backgroundImage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\catalogImage01.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\catalogImage02.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\firstPageImage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\mainHeaderNoText.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\mainHeaderWithText.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\tableBackgroundImage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\complexPage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\computer.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\defaultImage.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\education.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\email.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\fax.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\hub.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\internet.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\networkCard.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\office2000.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\officeXP.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\printer.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\router.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\server.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\simplePage.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\solution.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\symantecAV.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\windows2000.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\windows2000server.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\windows98.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\products\windowsXP.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_templates\declerations.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_templates\simplePage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "about\about.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "basket\addProduct.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "basket\basket.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "basket\delProduct.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "basket\makePay.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "basket\pay.asp"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "bin\" />
+                <File
+                    RelPath = "main\content.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "main\firstPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "products\products.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "products\productsCatalog.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "products\productsMain.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "products\showSubject.asp"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

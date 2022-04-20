@@ -1,0 +1,1 @@
+cppChessV2.exe compComp 3

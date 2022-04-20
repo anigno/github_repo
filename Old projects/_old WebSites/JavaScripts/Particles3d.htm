@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style type="text/css">
+.style2 {
+	border-style: solid;
+	border-width: 1px;
+}
+.style3 {
+	color: #FFFF00;
+	text-align: center;
+	font-size: xx-large;
+	border: 1px solid #C0C0C0;
+}
+.style4 {
+	color: #99FFCC;
+	text-align: left;
+	font-size: medium;
+	border: 1px solid #C0C0C0;
+}
+</style>
+</head>
+
+<body dir="ltr" bgcolor="black">
+
+
+
+
+<script type="text/javascript" language="javascript">
+	
+	var n=40;
+	var LargeSize=15;
+	
+	
+	var docHeight=document.documentElement.offsetHeight*0.9;
+
+	var pa=new Array(n);
+	var py=new Array(n);
+	var op=new Array(n);
+	for(a=0;a<n;a++){
+		pa[a]=get_random(360);
+		py[a]=get_random(docHeight);
+		op[a]=document.createElement("DIV");
+		op[a].id="p"+a;
+		document.body.appendChild(op[a]);
+		op[a].innerHTML="*";
+		op[a].style.position="absolute";
+		op[a].style.color="white";
+	
+	}
+	Draw();
+
+	
+	function Draw(){
+		docWidth=document.documentElement.offsetWidth*0.9;
+		for(a=0;a<n;a++){
+			if(pa[a]>359){
+				pa[a]=0
+			}else{
+				pa[a]++;
+			}
+			op[a].style.fontSize=LargeSize+LargeSize/2*Math.sin(pa[a]* Math.PI/180);
+
+			MoveElementTo(op[a],1.1*docWidth/2+docWidth/2*Math.cos(pa[a]* Math.PI/180),py[a]);
+		}
+		t=setTimeout("Draw()",100)
+	}
+	
+	function get_random(n)
+	{
+	    var ranNum= Math.floor(Math.random()*n);
+	    return ranNum;
+	}
+	
+
+	function MoveElementTo(o,x,y){
+		o.style.pixelLeft=x;
+		o.style.pixelTop=y;
+	}
+
+
+
+</script>
+<table style="width: 80%" align="center" class="style2">
+	<tr>
+		<td class="style3">Particles 3d</td>
+	</tr>
+	<tr>
+		<td class="style4">&lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&gt;<br />
+		<br />
+		var n=40;<br />
+		var LargeSize=15;<br />
+		<br />
+		<br />
+		var docHeight=document.documentElement.offsetHeight*0.9;<br />
+		<br />
+		var pa=new Array(n);<br />
+		var py=new Array(n);<br />
+		var op=new Array(n);<br />
+		for(a=0;a&lt;n;a++){<br />
+		pa[a]=get_random(360);<br />
+		py[a]=get_random(docHeight);<br />
+		op[a]=document.createElement(&quot;DIV&quot;);<br />
+		op[a].id=&quot;p&quot;+a;<br />
+		document.body.appendChild(op[a]);<br />
+		op[a].innerHTML=&quot;*&quot;;<br />
+		op[a].style.position=&quot;absolute&quot;;<br />
+		op[a].style.color=&quot;white&quot;;<br />
+		<br />
+		}<br />
+		Draw();<br />
+		<br />
+		<br />
+		function Draw(){<br />
+		docWidth=document.documentElement.offsetWidth*0.9;<br />
+		for(a=0;a&lt;n;a++){<br />
+		if(pa[a]&gt;359){<br />
+		pa[a]=0<br />
+		}else{<br />
+		pa[a]++;<br />
+		}<br />
+		op[a].style.fontSize=LargeSize+LargeSize/2*Math.sin(pa[a]* Math.PI/180);<br />
+		<br />
+		MoveElementTo(op[a],1.1*docWidth/2+docWidth/2*Math.cos(pa[a]* Math.PI/180),py[a]);<br />
+		}<br />
+		t=setTimeout(&quot;Draw()&quot;,100)<br />
+		}<br />
+		<br />
+		function get_random(n)<br />
+		{<br />
+		var ranNum= Math.floor(Math.random()*n);<br />
+		return ranNum;<br />
+		}<br />
+		<br />
+		function MoveElementTo(o,x,y){<br />
+		o.style.pixelLeft=x;<br />
+		o.style.pixelTop=y;<br />
+		}<br />
+		<br />
+		&lt;/script&gt;<br />
+		</td>
+	</tr>
+</table>
+</body>
+
+</html>

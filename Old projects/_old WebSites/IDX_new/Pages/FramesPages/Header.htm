@@ -1,0 +1,57 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<base target="frameMain">
+</head>
+
+<body>
+
+<div align="center">
+	<table border="0" width="600" id="table1" cellspacing="0" cellpadding="0">
+		<tr>
+			<td>
+
+<img border="0" src="GenericImages/Header1.gif" width="779" height="92"></td>
+		</tr>
+		<tr>
+			<td>
+				<a href="MainPage.htm">Home</a> | 
+				<a href="ProjectUpdates.htm">Project updates</a> |
+				<a onclick="ShowDiveSitesSubMenu()" onmouseover="ShowDiveSitesSubMenu()" >DiveSites</a> |
+				<!--a href="../DiveSitesDynamic/DiveSites.htm?scale=100">Dive sites</a--> 
+				<a href="Members.htm">Members</a> |
+				<a onclick="ShowPublicationsSubMenu()" onmousemove="ShowPublicationsSubMenu()">Publications</a> |
+				<a href="Contacts.htm">Contacts</a> |
+			</td>
+		</tr>
+		<tr>
+			<td><div id="SubMenu" onmouseleave='ClearSubMenu()'>
+			
+			</div></td>
+		</tr>
+	</table>
+</div>
+
+</body>
+<script type="text/javascript">
+	function ShowDiveSitesSubMenu()
+	{
+		spaces="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+		SubMenu.innerHTML=spaces+"<a href='../DynamicLinks/DynamicLinks.htm' >Dynamic map</a>&nbsp;|&nbsp;<a href='../DynamicLinks/SiteList.htm'>Sites list</a>";
+	}
+	function ShowPublicationsSubMenu()
+	{
+		spaces="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;";
+		SubMenu.innerHTML=spaces+"<a href='Publications/Local.htm'>Local</a> | <a href='Publications/International.htm'>International</a> | <a href='Publications/NewsLetter.htm'>Newsletter</a>";
+	}
+	function ClearSubMenu()
+	{
+	SubMenu.innerHTML="";
+	}
+</script>
+
+</html>

@@ -1,0 +1,74 @@
+<%@ Language=VBScript %>
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+</HEAD>
+<BODY>
+
+<%
+	'check if return from previous call to index.asp with iUsername
+	qUsername=Request.Form("text1")
+	if qUsername<>"" then
+		'if return from previous call write the coockies
+		Response.Cookies("ipFinder_username").expires=now()+100
+		Response.Cookies("ipFinder_username")=qUsername
+	end if
+%>
+	
+<%
+	'check for username in cookies
+	tUsername=Request.Cookies("ipFinder_username")
+	Response.Write Request.Cookies("ipFinder_username") & "<BR>"
+	if tUsername="" then
+	'no username will display form to get one
+%>
+<form id=form1 name=form1 action="ipfinder.asp" method=post>
+<INPUT type="text" id=text1 name=text1>
+<INPUT type="submit" value="enter username" id=submit1 name=submit1>
+</form>
+<%
+	else
+		'username cookies exist will add details
+		tLocal_addr=Request.ServerVariables("LOCAL_ADDR") 
+		tRemote_addr=Request.ServerVariables("REMOTE_ADDR") 
+		tRemote_host=Request.ServerVariables("REMOTE_HOST") 
+
+		dim mdbFile,conn
+		mdbFile="db\ipFinder.mdb"
+		set conn=Server.CreateObject("ADODB.connection")
+		connString="provider=Microsoft.Jet.OLEDB.4.0;" & _
+			"data source="	& _
+			server.MapPath(mdbFile)& ";"
+		conn.Open connString
+		openDb=conn
+		set RS=Server.Createobject("ADODB.RecordSet")
+		set RS1=Server.Createobject("ADODB.RecordSet")
+
+		'check for username exist
+		sql="select * from tblData where iUsername='" & tUsername & "'"
+		rs1.Open sql,conn
+		if rs1.EOF then
+			'username not exist will add username
+			sql="insert into tblData (iUsername,iLocal_addr,iRemote_addr,iRemote_host) values(" _
+			& "'" & tUsername & "','" & tLocal_addr & "','" _
+			& tRemote_addr & "','" & tRemote_host & "')"
+			'Response.Write sql
+			rs.Open sql,conn
+			Response.Redirect "showAll.asp"
+		else
+			'username exist will update 
+			sql="update tblData set iRemote_addr='" & tRemote_addr & "'" _
+			& " where iUsername='" & tUsername & "'"
+			'Response.Write sql
+			rs.Open sql,conn
+			Response.Redirect "ipfinder02.asp"
+		end if
+	end if
+%>
+
+
+
+</BODY>
+</HTML>
+
+

@@ -1,0 +1,65 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<P>
+
+
+
+<IMG border=0
+	 height=30
+	 name=myPicture
+	 onmousedown  =pictureMouseDown()
+	 onmousemove =PictureMouseOver()
+	 onmouseout=pictureMouseOut()
+	 onmouseup=pictureMouseUp()
+	 src="pic1.gif"
+	 width=30
+>
+
+
+<SCRIPT Language="JavaScript">
+ var picture = new Array("pic1.gif", "pic2.gif")
+		
+	function PictureMouseOver(){
+		document.myPicture.src=picture[1]
+	}//pictureMouseOver
+	function pictureMouseOut(){
+		document.myPicture.src=picture[0]
+	}//pictureMouseOut()
+	function pictureMouseDown(){
+		document.myPicture.border=1
+	}//pictureMouseOut()
+	function pictureMouseUp(){
+		document.myPicture.border=0
+	}//pictureMouseOut()
+</SCRIPT>
+
+
+
+
+<p>
+
+
+
+<IMG border=0
+	 height=30
+	 name=myPicture
+	 onmousedown  =pictureMouseDown()
+	 onmousemove =PictureMouseOver()
+	 onmouseout=pictureMouseOut()
+	 onmouseup=pictureMouseUp()
+	 src=button02.jpg
+	 width=30
+>
+
+
+</p>
+
+
+
+
+</BODY>
+</HTML>

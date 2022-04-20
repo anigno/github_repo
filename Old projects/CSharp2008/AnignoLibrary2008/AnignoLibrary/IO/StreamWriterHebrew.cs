@@ -1,0 +1,15 @@
+﻿using System.Text;
+using System.IO;
+
+namespace AnignoLibrary.IO
+{
+    public class StreamWriterHebrew : StreamWriter
+    {
+        internal static readonly Encoding HEBREW_ENCODING = Encoding.GetEncoding("windows-1255");
+
+        public StreamWriterHebrew(string path, bool append)
+            : base(path, append, HEBREW_ENCODING)
+        {
+        }
+    }
+}

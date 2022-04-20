@@ -1,0 +1,55 @@
+BODY {
+	background: #000066;
+	color : white;
+	font-family :  Arial, sans-serif;
+	font-size: 14px;
+	text-align: justify;
+
+	scrollbar-face-color: #000066;
+	scrollbar-track-color: #000066;
+	scrollbar-highlight-color: lightblue;
+	scrollbar-shadow-color: lightblue;
+	scrollbar-arrow-color: lightblue;
+	scrollbar-base-color: black;
+	scrollbar-3dlight-color: black;
+	scrollbar-darkshadow-color: black;
+}
+
+input,select,textarea,file
+{
+	background-color: navy;
+	color:white;
+}
+
+A {
+	text-decoration: none;
+	color: aqua;
+}
+
+A:Hover {
+	text-decoration: underline;
+	color: #32CD32;
+}
+
+HR {
+	color: blue;
+	height: 1pt;
+}
+
+H2 {
+	font-size: 20pt;
+	color: #87CEFA;
+}
+
+H3 {
+	font-size: 13pt;
+	color: #7FFFD4;
+}
+
+H4 {
+    font-size: small;
+	font-variant: small-caps;
+	font-weight: bold;
+	color : white;
+	}
+

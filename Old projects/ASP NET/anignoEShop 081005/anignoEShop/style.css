@@ -1,0 +1,33 @@
+body
+{
+	background-attachment: scroll;
+	color: Maroon;
+	background-repeat: repeat;
+	background-color: #DDB481;
+	scrollbar-face-color: #D2DC7A;
+	scrollbar-track-color: #D2DC7A;
+	background-image: url(images/rrGoldTxtrTile.jpg);
+}
+	
+table
+{
+	background-color: #F0C106;
+	background-image: url(images/rrGoldTxtrTileDrk.jpg);
+}
+
+a
+{
+	color: Black;
+	text-decoration: none;
+	font-size: small;
+}
+a:hover{
+	color: Green;
+	text-decoration: none;
+	background-color: White;
+}
+
+input,select,textarea,file,option
+{
+	background-color: #DEB887;
+}

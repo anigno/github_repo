@@ -1,0 +1,167 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.0.9414"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{12F220A4-FCBF-4F8E-88FB-99024690B810}"
+    >
+        <Build>
+            <Settings
+                AssemblyName = "remoteGcc"
+                OutputType = "WinExe"
+                StartupObject = "remoteGcc.frmMain"
+                AssemblyMajorVersion = "1"
+                AssemblyMinorVersion = "0"
+                AssemblyRevisionNumber = "0"
+                GenerateRevisionNumber = "False"
+                AssemblyCompanyName = "ANIGNORA"
+                ApplicationIcon = "remoteGcc.ico"
+                RootNamespace = "remoteGcc"
+            >
+                <Config
+                    Name = "Debug"
+                    DebugSymbols = "True"
+                    DefineDebug = "True"
+                    DefineTrace = "True"
+                    OutputPath = ".\bin\"
+                    DefineConstants = "Win32 = True"
+                    StartArguments = ""
+                />
+                <Config
+                    Name = "Release"
+                    DebugSymbols = "False"
+                    DefineDebug = "False"
+                    DefineTrace = "True"
+                    OutputPath = ".\bin\"
+                    DefineConstants = "Win32 = True"
+                    StartArguments = ""
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.XML"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic.Compatibility"
+                    AssemblyName = "Microsoft.VisualBasic.Compatibility"
+                />
+                <Reference
+                    Name = "RichTextLib"
+                    Guid = "{3B7C8863-D78F-101B-B9B5-04021C009402}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "2"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxRichTextLib"
+                    Guid = "{3B7C8863-D78F-101B-B9B5-04021C009402}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "2"
+                    WrapperTool = "aximp"
+                />
+                <Reference
+                    Name = "EZFTPLib"
+                    Guid = "{6580F760-7819-11CF-B86C-444553540000}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    WrapperTool = "tlbimp"
+                />
+                <Reference
+                    Name = "AxEZFTPLib"
+                    Guid = "{6580F760-7819-11CF-B86C-444553540000}"
+                    Lcid = "0"
+                    VersionMajor = "1"
+                    VersionMinor = "0"
+                    WrapperTool = "aximp"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "Microsoft.VisualBasic.Compatibility" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Diagnostics" />
+                <Import Namespace = "System.Windows.Forms" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "frmFtp.vb"
+                    BuildAction = "Compile"
+                    SubType = "Form"
+                />
+                <File
+                    RelPath = "mdlMainFunctions.vb"
+                    BuildAction = "Compile"
+                    SubType = "Code"
+                />
+                <File
+                    RelPath = "frmMain.vb"
+                    BuildAction = "Compile"
+                    SubType = "Form"
+                />
+                <File
+                    RelPath = "mdlMain.vb"
+                    BuildAction = "Compile"
+                    SubType = "Code"
+                />
+                <File
+                    RelPath = "frmSelectDir.vb"
+                    BuildAction = "Compile"
+                    SubType = "Form"
+                />
+                <File
+                    RelPath = "frmFtp.resX"
+                    DependentUpon = "frmFtp.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmMain.resX"
+                    DependentUpon = "frmMain.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "frmSelectDir.resX"
+                    DependentUpon = "frmSelectDir.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "remoteGcc.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_UpgradeReport.htm"
+                    BuildAction = "None"
+                    SubType = "Preview"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>

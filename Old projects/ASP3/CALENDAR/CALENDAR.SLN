@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{BDD4A1A1-7A1F-11D0-AC13-00A0C91E29D5}") = "anignora/calendar", "calendar.vip", "{FB710F6B-0DCC-49EA-8DA3-B3F9DA75E500}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {FB710F6B-0DCC-49EA-8DA3-B3F9DA75E500}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {FB710F6B-0DCC-49EA-8DA3-B3F9DA75E500}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

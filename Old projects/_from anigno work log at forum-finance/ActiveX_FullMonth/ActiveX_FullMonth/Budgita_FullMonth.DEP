@@ -1,0 +1,20 @@
+[Version]
+Version=1.0.0.20
+
+[Budgita_FullMonth.ocx <0009>]
+Dest=$(AppPath)
+Date=30/07/99
+Time=03:37
+Version=1.0.0.20
+CABFilename=Budgita_FullMonth.CAB
+CABINFFile=Budgita_FullMonth.INF
+Uses1=MSVBVM60.DLL
+Uses2=OLEAUT32.DLL
+Uses3=olepro32.dll
+Uses4=asycfilt.dll
+Uses5=STDOLE2.TLB
+Uses6=COMCAT.DLL
+Uses7=MSCOMCTL.OCX
+Uses8=MSCOMCT2.OCX
+Uses9=COMCT332.OCX
+Uses10=MSSTKPRP.DLL

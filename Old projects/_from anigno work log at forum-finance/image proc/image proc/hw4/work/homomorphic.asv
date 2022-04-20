@@ -1,0 +1,14 @@
+function ret=homomorphic(inputImage,lowPassValue)
+inputImage = readImage('elephant.tif');
+putimage(abs(tmp));
+lowPassValue=179;
+tmp=inputImage;
+tmp=log(tmp);
+tmp=fft2(tmp);
+lp=lowPass(lowPassValue);
+tmp=tmp.*lp;
+tmp=ifft2(tmp);
+tmp=exp(tmp);
+putimage(abs(tmp));
+ret=tmp;
+end

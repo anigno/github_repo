@@ -1,0 +1,10 @@
+UCalc Fast Math Parser 2.0.  Daniel Corbier.
+32-bit DLL component for software developers
+which allows programs to evaluate math and
+string expressions defined at runtime.
+Designed for ease of implementation, and
+rapid calculations.  It includes direct
+support for C++, Delphi, PowerBASIC, and
+Visual Basic.  Suitable for heavy-duty
+number-crunching.  Works under Windows 95
+or above.  http://www.ucalc.com/mathparser.

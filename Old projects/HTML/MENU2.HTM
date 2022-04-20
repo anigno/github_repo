@@ -1,0 +1,62 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 5.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<table border=1>
+<tr>
+<td>
+    <div id=menu1>menu1</div>
+    <div id=menu2>menu2</div>
+    <div id=menu3>menu3</div>
+</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>
+    <div id=submenu></div>
+</td>
+</tr>
+</table>
+<div id=qq></div>
+</BODY>
+</HTML>
+
+
+<script language=vbscript>
+dim m1
+m1=0
+
+	menu1.style.cursor="hand"
+	menu2.style.cursor="hand"
+	menu3.style.cursor="hand"
+	sub menu1_onclick()
+if m1=0 then
+m1=1	
+	submenu.innerHTML=	"<a href=#>menu1sub1</a><br>" & _
+							"<a href=#>menu1sub2</a><br>" & _
+							"<a href=#>menu1sub3</a><br>" & _
+							"<a href=#>menu1sub4</a><br>" & _
+							"<a href=#>menu1sub5</a><br>" & _
+							"<a href=#>menu1sub6</a><br>" & _
+							"<a href=#>menu1sub7</a><br>" & _
+		end if					"<a href=#>menu1sub8</a><br>" 
+	end sub
+	sub menu2_onclick()
+		submenu.innerHTML=	"<a href=#>menu2sub1</a><br>" & _
+							"<a href=#>menu2sub2</a><br>" & _
+							"<a href=#>menu2sub3</a><br>" & _
+							"<a href=#>menu2sub4</a><br>" & _
+							"<a href=#>menu2sub5</a><br>" & _
+							"<a href=#>menu2sub6></a><br>" 
+	end sub
+	sub menu3_onclick()
+		submenu.innerHTML=	"<a href=#>menu3sub1</a><br>" & _
+							"<a href=#>menu3sub2</a><br>" & _
+							"<a href=#>menu3sub2</a><br>" 
+	end sub
+
+	
+</script>

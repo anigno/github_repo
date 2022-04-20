@@ -1,0 +1,11 @@
+		public static VersionFilesGroupType Parse(string GroupNameString)
+		{
+			int a=0;
+			foreach(string s in Enum.GetNames(typeof(VersionFilesGroupType)))
+			{
+				if(s==GroupNameString)return (VersionFilesGroupType)a;
+				a++;
+			}
+			return (VersionFilesGroupType)0;
+		}
+

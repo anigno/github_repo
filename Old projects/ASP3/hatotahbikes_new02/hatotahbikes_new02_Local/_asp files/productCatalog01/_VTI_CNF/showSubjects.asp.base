@@ -1,0 +1,26 @@
+<!--#INCLUDE FILE="functions.asp" -->
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+</HEAD>
+<BODY dir=rtl >
+<%
+	dim conn,rs,sql
+	conn=openDB()
+	set rs=getrs()
+	sql="select * from tblSubjects order by iSubject ASC"
+	rs.open sql,conn
+%>
+<table border=1 align=center>
+<%while not rs.eof%>
+<tr><td align=center>
+<a href=showOneSubject.asp?iKey=<%=rs("iKey")%>>
+<font size=4><%=rs("iSubject")%></font>
+</a>
+<%rs.movenext%>
+</td></tr>
+<%wend%>
+
+<%set rs=nothing%>
+</BODY>
+</HTML>

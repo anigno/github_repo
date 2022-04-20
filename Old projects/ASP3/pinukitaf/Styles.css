@@ -1,0 +1,41 @@
+body
+{
+	background-attachment: scroll;
+	color: #FFEBCD;
+	background-repeat: repeat;
+	background-color: Navy;
+	scrollbar-face-color: #6495ED;
+	scrollbar-track-color: #6495ED;
+	scrollbar-highlight-color: yellow;
+	scrollbar-shadow-color: yellow;
+	scrollbar-arrow-color: yellow;
+	scrollbar-base-color: black;
+	scrollbar-3dlight-color: black;
+	scrollbar-darkshadow-color: black;
+	font: 3;
+}
+	
+table
+{
+	background-color: #4169E1;
+	font-size: medium;
+}
+
+a
+{
+	font-weight: bold;
+	color: #ffcc00;
+	text-decoration: none;
+	font-size: medium;
+}
+a:hover{
+	color: #ffcc00;
+	text-decoration: none;
+	background-color: #0000CD;
+}
+
+input,select,textarea,file
+{
+	background-color: #483D8B;
+	color:#FFDAB9;
+}

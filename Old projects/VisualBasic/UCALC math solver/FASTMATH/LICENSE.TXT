@@ -1,0 +1,113 @@
+UCalc Fast Math Parser 2.0.
+Copyright © 1998, 1999 by Daniel Corbier.
+All rights reserved.
+
+
+LICENSE AGREEMENT
+
+
+Continued usage of this component for purposes other then testing the
+parser requires a license.  License options include Free, Upgrade,
+Lite, Educational, Standard, and Professional.  Before selecting a
+license option, please read the entire license document.
+
+STANDARD LICENSE.  Under this license, the licensee receives a special
+serial number which, when applied, causes the opening message boxes
+not to appear.  All features can be used, except for function call-
+backs (user functions that are defined with the address of a function
+in the programmer's source code), and preparsing (with ucPreParse).
+
+PROFESSIONAL LICENSE.  The licensee receives a serial number as
+described above.  Under this license, all features are made available.
+
+LITE LICENSE.  The licensee receives a serial number as described above.
+Under this license, the licensee is limited to 5 user variables.
+Preparsing (with ucPreParse), and user functions are not available.
+
+FREE LICENSE.  With this option, the licensee is allowed to use the
+component for personal projects, such as homework assignments, school
+science projects, and such.  It covers software development with the
+component only on personally-owned computers, such has a home PC.
+This license does not cover usage of the component on school computers,
+with the exception of special demonstrations.  For instance a
+teacher may demonstrate the component as part of a lecture.  However,
+permanent installation of the software on school computers for continued
+use requires an Educational License.  The licensee of the free option
+receives code which suppresses the second opening message box.  This
+license supports the use of all features.
+
+The free license is dispensed upon request, either by filling out the user
+satisfaction survey at http://www.ucalc.com/mathparser/dllquest.html, or
+by e-mailing the request to license@ucalc.com.  The free license is not
+available through resellers, and cannot be transferred to a third party.
+The free license is dispensed at the sole discretion of the licensor, and
+conditions for the free license are subject to change.
+See http://www.ucalc.com/bulletin.html in case there are any changes.
+
+EDUCATIONAL LICENSE.  The licensee gets all the benefits of a professional
+license, but at the low cost of the Limited License.  This license is for
+non-commercial use within an educational institution.
+
+UPGRADE LICENSE.  The licensee can upgrade from either the standard or
+developer license of version 1.0 to the Professional License, or from
+Limited to Standard, or Standard to Professional, for the same minimum
+price.
+
+
+With the exception of the Free and Educational licenses, the DLL can be
+included royalty-free in commercially distributed projects as well as
+non-commercial projects.
+
+
+The following part of this document serves as a license agreement between
+the author of UCalc Fast Math Parser, and you (as an individual or single
+entity software developer using this component), pertaining to version 2.0
+of the UCalc Fast Math Parser component.  Your usage of this component
+implies your acceptance to abide by the terms of this end user license
+agreement.
+
+1. GRANT OF LICENSE.  Daniel Corbier, author of UCalc Fast Math Parser,
+grants to you a non-exclusive, non-transferable license to install and
+use the software on your computer.  This license is conditional, based
+on the following limitations:  (i) You may not reverse engineer, decompile,
+disassemble, or otherwise attempt to modify the component.  (ii)  If you
+have not obtained a license, then you may not remove, suppress, hide, or
+cause your program to skip the opening message box(es).  (iii) You may not
+use the trial copy for purposes other than evaluation of the component,
+or beta testing of your own product.  (iii) If you have purchased a
+license, you may not use this component for software development on more
+computers than licensed for.
+
+2a. DISTRIBUTION OF TRIAL EDITION.  The trial edition may be distributed
+under these conditions:  (i) All parts of the component (including
+documentation and sample project files) must be distributed together.
+(ii) The component and associated files may be distributed as a unit on
+legitimate software distribution sites.  (iii) The trial edition may not
+be distributed as part of another program which uses it.
+
+2b. DISTRIBUTION OF LICENSED VERSION.  Only the .DLL file from the parser
+component may be distributed as part of your finished program.  As many
+copies of the DLL as necessary can be distributed royalty-free.  Add-on
+libraries for this component may also be distributed royalty-free as long
+as the serial number is not distributed or implemented in the library.
+However, under the license options available in this documentation, the
+component itself should not be distributed as part of another programming
+component or programming language, or tool for programmers.  To negotiate
+other possible licensing options, send e-mail to license@ucalc.com.
+
+3. LIMITED WARRANTY.  This component is provided on an "as is" basis
+without warranty of any kind, expressed or implied, including, but not
+limited to implied warranties of merchantability or fitness for a
+particular purpose.  All other warranties are also expressly disclaimed.
+
+4. SUITABILITY.  The persons or companies using this component are solely
+responsible for thoroughly testing it to make sure it works to their
+satisfaction before purchasing a license and incorporating a non-
+evaluation version into their programs.  All features are made available
+for full testing purposes in the evaluation copy.  The DLL that is used
+in the demo is the same one that is used as the licensed copy.  Therefore,
+by obtaining a license, the licensee indicates that the program has met
+his/her expectations and runs to his/her satisfaction.
+
+5. EXPORT. You agree to comply with U.S. export laws and regulations
+concerning the acquisition, usage or transfer of computer software.

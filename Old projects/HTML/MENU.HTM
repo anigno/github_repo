@@ -1,0 +1,49 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+	<!must put a menu header>
+	<!**********************>	
+	<div id=WHATEVER onclick="changeMenu()">main menu</div>
+	<div id=WHATEVER onclick="changeMenu()">sec menu</div>
+</BODY>
+<script language="vbscript">
+dim GR
+GR = chr(34)
+dim mainMenu,menu(50)
+'must change the sub menus in the array
+'**************************************
+menu(1)="main menu<a href=LINK1>subMenuA</a><BR>"
+menu(2)="main menu<a href=LINK2>subMenuB</a><BR>"
+menu(3)="main menu<a href=LINK3>subMenuC</a><BR>"
+menu(4)="main menu<a href=LINK4>subMenuD</a><BR>"
+menu(5)="sec menu<a href=LINK1>secSubMenuA</a><BR>"
+menu(6)="sec menu<a href=LINK2>secSubMenuB</a><BR>"
+dim outputHTML
+	sub changeMenu()
+		'set the className if empty "0 or 1 & menuName"
+		if window.event.srcElement.className="" then window.event.srcElement.className="0" & window.event.srcElement.innerHTML
+		outputHTML=""
+		'determine the subMenus for that menu
+		for a=1 to ubound(menu)
+			if mid(menu(a),1,len(window.event.srcElement.innerHTML))= window.event.srcElement.innerHTML then
+				outputHTML=outputHTML & mid(menu(a),len(window.event.srcElement.innerHTML)+1)
+			end if
+		next
+		'source ID is always active!
+		if mid(window.event.srcElement.className,1,1)="0" then
+			'open menu
+			mainMenu=mid(window.event.srcElement.className,2)
+			window.event.srcElement.innerHTML=mainmenu & "<BR>" & outputHTML
+			window.event.srcElement.className="1" & mainMenu
+		else
+			'close menu
+			mainMenu=mid(window.event.srcElement.className,2)
+			window.event.srcElement.className="0" & mainMenu
+			window.event.srcElement.innerHTML=mainMenu
+		end if
+	end sub
+</script>
+</HTML>

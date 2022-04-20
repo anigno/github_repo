@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "remoteGcc", "remoteGcc.vbproj", "{F3A457BA-4CF9-401D-866E-5B89EB96124B}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{F3A457BA-4CF9-401D-866E-5B89EB96124B}.Debug.ActiveCfg = Debug|.NET
+		{F3A457BA-4CF9-401D-866E-5B89EB96124B}.Debug.Build.0 = Debug|.NET
+		{F3A457BA-4CF9-401D-866E-5B89EB96124B}.Release.ActiveCfg = Release|.NET
+		{F3A457BA-4CF9-401D-866E-5B89EB96124B}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

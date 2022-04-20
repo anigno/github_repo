@@ -1,0 +1,160 @@
+<!--#INCLUDE FILE="functions.asp" -->
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<meta name="ms.locale" content="HE">
+<BODY dir=rtl>
+הוספת מודעה<br>
+<form id=form1 name=form1 method=post action="addNew01.asp">
+<TABLE cellSpacing=1 cellPadding=1 width="80%" border=1>
+  <TR>
+    <TD>סוג</TD>
+    <TD>
+    <SELECT id=type name=type>    <OPTION selected value='אופנוע'>אופנוע</OPTION>
+    <OPTION value='טרקטורון'>טרקטורון</OPTION>
+	</SELECT>
+    </TD></TR>
+  <TR>
+    <TD>יצרן</TD>
+    <TD>
+    <SELECT id=manuf name=manuf>
+		<option selected value='28'>B.S.A</option>
+		<option value='1'>איטלג'ט</option>
+		<option value='2'>אנפילד</option>
+		<option value='3'>אפריליה</option>
+		<option value='4'>ב.מ.וו</option>
+		<option value='5'>בטה</option>
+		<option value='6'>ג'ילרה</option>
+		<option value='7'>דוקאטי</option>
+		<option value='8'>דיאלים</option>
+		<option value='26'>דרבי</option>
+		<option value='9'>הונדה</option>
+		<option value='27'>הוסברג</option>
+		<option value='10'>הוסקוורנה</option>
+		<option value='11'>הרלי דיווידסון</option>
+		<option value='32'>טריום</option>
+		<option value='12'>יאווה</option>
+		<option value='13'>ימאהה</option>
+		<option value='15'>מ.ז</option>
+		<option value='29'>מוטו מורינו</option>
+		<option value='14'>מוטוגוצי</option>
+		<option value='24'>מלאגוטי</option>
+		<option value='34'>נורטון</option>
+		<option value='16'>סאן יאנג</option>
+		<option value='17'>סוזוקי</option>
+		<option value='33'>סי.פי.אי</option>
+		<option value='25'>פי.ג'י.או</option>
+		<option value='19'>פיאג'ו</option>
+		<option value='18'>פיג'ו</option>
+		<option value='22'>ק.ט.מ</option>
+		<option value='20'>קאג'יבה</option>
+		<option value='21'>קאוואסאקי</option>
+		<option value='23'>קימקו</option>
+	</SELECT>
+
+    <TD>נפח</TD>
+    <TD>
+    <SELECT id=size name=size>
+		<OPTION selected value='50'>50</OPTION>
+		<%
+			for a=60 to 1500 step 10
+			Response.Write "<option value='" & a & "'>" & a & "</option>"
+			next
+		%>
+	</SELECT>
+	</TD></TR>
+
+  <TR>
+    <TD>דגם&nbsp;<font size=1>(לדוגמא<br> DR,YZ,WR,F...)</font></TD>
+    <TD><INPUT dir=ltr type="text" id=model name=model>
+	<!--font size=1>אנגלית</font>-->
+    </TD>
+    <TD>שנת ייצור</TD>
+    <TD>
+    <SELECT id=year name=year>
+		<OPTION selected value='1950'>1950</OPTION>
+		<%
+			for a=1951 to 2003 step 1
+			Response.Write "<option value='" & a & "'>" & a & "</option>"
+			next
+		%>
+	</SELECT>
+    </TD></TR>
+  <TR>
+    <TD>יד</TD>
+    <TD>
+<SELECT id=hand name=hand>
+<OPTION selected value='1'>1</OPTION><OPTION value='2'>2</OPTION><OPTION value='3'>3</OPTION><OPTION value='4'>4</OPTION><OPTION value='5'>5</OPTION><OPTION value='6'>6</OPTION><OPTION value='7'>7</OPTION><OPTION value='8'>8</OPTION><OPTION value='9'>9</OPTION></SELECT>
+	</TD>
+    <TD>מחיר</TD>
+    <TD><INPUT type="text" id=prise name=prise></TD></TR>
+  <TR>
+    <TD>תאור כללי</TD>
+    <TD>    <TEXTAREA rows=4 cols=20 id=description name=description>
+	</TEXTAREA></TD>
+	<td>אזור מגורים</td>
+	<td>
+    <SELECT id=region name=region>    <OPTION value='צפון'>צפון</OPTION>    <OPTION value='נהריה והסביבה'>נהריה והסביבה</OPTION>    <OPTION selected value='חיפה והסביבה'>חיפה והסביבה</OPTION>    <OPTION value='מרכז'>מרכז</OPTION>    <OPTION value='דרום'>דרום</OPTION>    </SELECT>
+	</td>	
+
+
+    </tr><tr>
+    <TD>שם</TD>
+    <TD>
+    <INPUT type="text" id=iname name=iname><br>
+    </td>
+    <td>טלפון
+    </td>
+    <td>
+    <INPUT type="text" id=phone name=phone>
+    </TD></TR>
+
+  <TR>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD>
+    <TD></TD></TR>
+</TABLE>
+<INPUT type="button" value="הוסף" id=submit1 name=submit1>
+&nbsp;&nbsp;&nbsp;<INPUT type="button" value="חזרה" id=button1 name=button1>
+</form>
+<div id=qq></div>
+</BODY>
+</HTML>
+
+<script language=vbscript>
+	sub button1_onclick()
+		window.navigate "index.asp"
+	end sub
+	sub submit1_onclick
+		if form1.description.value="" then form1.description.value="אין פרטים נוספים"
+		if form1.model.value="" or form1.iname.value="" or form1.phone.value="" then
+			MsgBox "חסרים פרטים בטופס!",vbCritical
+		else
+			form1.submit1.disabled=true
+			form1.submit
+		end if
+	end sub
+	sub model_onkeyup()
+		form1.model.value=checkText(form1.model.value,2)
+	end sub
+	sub prise_onkeyup()
+		form1.prise.value=checkText(form1.prise.value,1)
+	end sub	
+	sub description_onkeyup()
+		form1.description.value=checkText(form1.description.value,1)
+	end sub	
+	sub phone_onkeyup()
+		form1.phone.value=checkText(form1.phone.value,4)
+	end sub	
+	sub iname_onkeyup()
+		form1.iname.value=checkText(form1.iname.value,1)
+	end sub	
+
+'	for q=0 to form1.manuf.length
+'		qq.innerHTML=qq.innerHTML & "<br>" &_
+'			"sModel(" & form1.manuf.item(q).value & ")=" & chr(34) & form1.manuf.item(q).innerhtml & chr(34)
+'	next
+</script>
+

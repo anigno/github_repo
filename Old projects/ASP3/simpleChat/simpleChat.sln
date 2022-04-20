@@ -1,0 +1,17 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{BDD4A1A1-7A1F-11D0-AC13-00A0C91E29D5}") = "lala/simpleChat", "simpleChat.vip", "{064694E0-AC1F-4CF1-9B21-DB245D3D7250}"
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+	EndGlobalSection
+	GlobalSection(ProjectDependencies) = postSolution
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

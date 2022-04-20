@@ -1,0 +1,133 @@
+﻿using System.Windows.Forms;
+using System.Diagnostics;
+using System.ComponentModel;
+
+namespace AnignoLibrary.IO.FileCopyNoneBlocking
+{
+    public partial class FileCopyNoneBlockingControl : UserControl
+    {
+		#region (------------------  Const Fields  ------------------)
+        public const string CATEGORY_STRING = " FileCopyNoneBlockingControl";
+        public const int COPY_BUFFER_SIZE = 1024 * 1024 * 16;
+		#endregion (------------------  Const Fields  ------------------)
+
+
+		#region (------------------  Fields  ------------------)
+        private readonly FileCopyNoneBlockingManager _fcManager = new FileCopyNoneBlockingManager(COPY_BUFFER_SIZE);
+        readonly Stopwatch sw=new Stopwatch();
+		#endregion (------------------  Fields  ------------------)
+
+
+		#region (------------------  Constructors  ------------------)
+        public FileCopyNoneBlockingControl()
+        {
+            InitializeComponent();
+            _fcManager.OnFileCopyEnded += _fcManager_OnFileCopyEnded;
+            _fcManager.OnFileCopyError += _fcManager_OnFileCopyError;
+            _fcManager.OnFileCopyInProgress += _fcManager_OnFileCopyInProgress;
+            _fcManager.OnFileCopyStarted += _fcManager_OnFileCopyStarted;
+            _fcManager.OnFileCopyAborted += _fcManager_OnFileCopyAborted;
+            OnFileCopyInProgress += FileCopyNoneBlockingControl_OnFileCopyInProgress;
+            OnFileCopyEnded += FileCopyNoneBlockingControl_OnFileCopyEnded;
+        }
+		#endregion (------------------  Constructors  ------------------)
+
+
+		#region (------------------  Events  ------------------)
+        [Category(CATEGORY_STRING)]
+        public event FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler OnFileCopyAborted;
+
+        [Category(CATEGORY_STRING)]
+        public event FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler OnFileCopyEnded;
+
+        [Category(CATEGORY_STRING)]
+        public event FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler OnFileCopyError;
+
+        [Category(CATEGORY_STRING)]
+        public event FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler OnFileCopyInProgress;
+
+        [Category(CATEGORY_STRING)]
+        public event FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler OnFileCopyStarted;
+		#endregion (------------------  Events  ------------------)
+
+
+		#region (------------------  Event Handlers  ------------------)
+        void _fcManager_OnFileCopyAborted(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            RaiseEvent(OnFileCopyAborted, sourceFile, destinationFile, result, message);
+        }
+
+        void _fcManager_OnFileCopyEnded(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            RaiseEvent(OnFileCopyEnded, sourceFile, destinationFile, result, message);
+        }
+
+        void _fcManager_OnFileCopyError(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            RaiseEvent(OnFileCopyError, sourceFile, destinationFile, result, message);
+        }
+
+        void _fcManager_OnFileCopyInProgress(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            RaiseEvent(OnFileCopyInProgress, sourceFile, destinationFile, result, message);
+        }
+
+        void _fcManager_OnFileCopyStarted(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            RaiseEvent(OnFileCopyStarted,sourceFile,destinationFile,result,message);
+        }
+
+        private void buttonAbort_Click(object sender, System.EventArgs e)
+        {
+            _fcManager.Abort();
+        }
+
+        void FileCopyNoneBlockingControl_OnFileCopyEnded(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            labelSource.Text = labelDestination.Text = "";
+            anignoProgressBarFlatCopyProgress.Value = 0;
+            anignoProgressBarFlatCopyProgress.Text = "0%";
+            Refresh();
+        }
+
+        void FileCopyNoneBlockingControl_OnFileCopyInProgress(string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            long milSec = sw.ElapsedMilliseconds;
+            if(milSec==0)milSec=1;
+            int progress=(int) (_fcManager.CurrentCopiedBytes * 100 / _fcManager.CurrentTotalBytes);
+            anignoProgressBarFlatCopyProgress.Value = progress;
+            anignoProgressBarFlatCopyProgress.ProgressBarText = progress + "% at "+COPY_BUFFER_SIZE/milSec+" kb/sec";
+            sw.Reset();
+            sw.Start();
+        }
+		#endregion (------------------  Event Handlers  ------------------)
+
+
+		#region (------------------  Private Methods  ------------------)
+        private void RaiseEvent(FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler fileCopyEventHandler, string sourceFile, string destinationFile, FileCopyNoneBlockingManager.FileCopyOperationResultEnum result, string message)
+        {
+            if (fileCopyEventHandler == null)return;
+            if (InvokeRequired)
+            {
+                Invoke(new FileCopyNoneBlockingManager.FileCopyNoneBlockingEventHandler(fileCopyEventHandler), sourceFile, destinationFile, result, message);
+            }
+            else
+            {
+                fileCopyEventHandler(sourceFile, destinationFile, result, message);
+            }
+        }
+		#endregion (------------------  Private Methods  ------------------)
+
+
+		#region (------------------  Public Methods  ------------------)
+        public void StartCopy(string source, string destination)
+        {
+            labelSource.Text = source;
+            labelDestination.Text = destination;
+            _fcManager.Copy(source,destination);
+            sw.Reset();
+            sw.Start();
+        }
+		#endregion (------------------  Public Methods  ------------------)
+    }
+}

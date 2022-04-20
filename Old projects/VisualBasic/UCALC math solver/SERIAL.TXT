@@ -1,0 +1,8 @@
+Sub ucDefineFunction(FunctionDef$, Optional ByVal FunctionAddress As Long)
+
+ucLicense = "387715451073568104795717"	'add this line
+
+ucGetParamAddressDbl ucParam(0), ucParamCount, ucMaxParamPerFunction, ucSetError
+ucDefineFunctionDbl FunctionDef$, FunctionAddress
+
+End Sub

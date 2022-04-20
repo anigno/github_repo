@@ -1,0 +1,22 @@
+deploying .net with the framework (1.1)
+
+bootstrapper setupexe file is used to lunch a silanced installation
+of dotnetfx.exe. which is the dot net framework (1.1) components
+if needed.
+changes must be done at the settings.ini file to let the setup.exe
+find and lunch our application setup program.
+
+1. at the same directory, put:
+	setup.exe(bootstrapper)
+	setting.ini(bootstrapper)
+	dotnetfx.exe
+	yourSetup.exe
+	yourMsi.msi
+	setup.ini(your setup.ini)
+	all other files your application need for deploy
+2. changes in the setting.ini(bootstrapper)
+	msi=yourSetup.msi
+
+3. done
+
+

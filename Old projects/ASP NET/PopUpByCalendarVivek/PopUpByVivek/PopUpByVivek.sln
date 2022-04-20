@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PopUpByVivek", "http://localhost/PopUpByVivek/PopUpByVivek.csproj", "{EF3F6124-30C7-403A-A05B-52867EDA871E}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{EF3F6124-30C7-403A-A05B-52867EDA871E}.Debug.ActiveCfg = Debug|.NET
+		{EF3F6124-30C7-403A-A05B-52867EDA871E}.Debug.Build.0 = Debug|.NET
+		{EF3F6124-30C7-403A-A05B-52867EDA871E}.Release.ActiveCfg = Release|.NET
+		{EF3F6124-30C7-403A-A05B-52867EDA871E}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

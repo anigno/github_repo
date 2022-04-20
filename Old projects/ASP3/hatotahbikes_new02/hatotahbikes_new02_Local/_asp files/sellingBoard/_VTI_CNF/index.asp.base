@@ -1,0 +1,18 @@
+<%@ Language=VBScript %>
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 6.0">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1255">
+<meta name="ms.locale" content="HE">
+
+<BODY dir=rtl>
+<table>
+<tr><td><a href=search.asp>חיפוש מודעה</a></td></tr>
+<tr><td><a href=addNew.asp>הוספת מודעה</a></td></tr>
+<table>
+
+	
+ 
+	
+</BODY>
+</HTML>

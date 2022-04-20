@@ -1,0 +1,9 @@
+<%@ Language=VBScript %>
+<HTML>
+<HEAD>
+</HEAD>
+<BODY bgColor=Black text=White topMargin=0 leftMargin=0 rightMargin=0 bottomMargin=0>
+
+<font size=1>מבקרים</font>
+</BODY>
+</HTML>

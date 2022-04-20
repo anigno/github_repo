@@ -1,0 +1,26 @@
+EZVIDCAP (VB6 version) Licensing and Distribution Agreement
+
+25 August 1999
+Copyright (C) 1998-2000 Ray Mercer
+Please direct licensing questions to <raymer@shrinkwrapvb.com>
+
+   
+The ezVidC60.ocx control is being provided as freeware, restricted only by the conditions set forth below.
+
+
+--------------------------------------------------------------------------------
+
+Developers
+The ezVidC60.ocx control is being provided as freeware to developers who are solely responsible for determining the suitability of the control for their use. The ezVidC60.ocx control and related files are the property of Ray Mercer, the developer and he retains the exclusive property rights to the control. This agreement grants application developers conditional permission for it's use. 
+
+Application developers are free to distribute the ezVidC60.ocx control with their application. This also extends to include any demo code that may have been modified in order to achieve the functionality desired in their application. By using ezVidC60.ocx, the developer acknowledges these conditions covering both the use and distribution of ezVidC60.ocx, and their use shall constitute acceptance of this agreement.
+
+Under no circumstance does the control author or his employer assume any responsibility for the reliability of the control, nor responsibility in the unlikely event of any possible loss of data that may be incurred from such use.
+   
+
+Distributors
+The Shrinkwrap Visual Basic website (http://www.shrinkwrapvb.com) and Ray Mercer, the developer are the sole legal distributors of the ezVidC60.ocx control. 
+
+Neither this control nor portion of the control package (ocx, dll, help file, demo code or zip) may be posted or distributed via any web site, online service or BBS, or included on any CD or with any other software media without explicit written permission from Ray Mercer unless the control is a required part of their application being distributed. In addition, this control may not be distributed via any fee-based service or media. Contact information for Ray Mercer, the developer, can be found on the Shrinkwrap Visual Basic website.
+   
+--------------------------------------------------------------------------------

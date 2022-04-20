@@ -1,0 +1,1 @@
+DEMOVB.EXE requires Win98 or above, or Windows 95 with VB 5.0 runtime files.

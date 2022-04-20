@@ -1,0 +1,88 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\theGreatSnailRaceV2.exe=Yes
+D:\WINNT\system32\MSVBVM60.DLL=Yes
+D:\WINNT\system32\OLEAUT32.DLL=Yes
+D:\WINNT\system32\OLEPRO32.DLL=Yes
+D:\WINNT\system32\ASYCFILT.DLL=Yes
+D:\WINNT\system32\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\theGreatSnailRaceV2.exe=$(AppPath)
+D:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\theGreatSnailRaceV2.exe=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=theGreatSnailRaceV2
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=theGreatSnailRaceV2
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|theGreatSnailRaceV2]
+Icon1=theGreatSnailRaceV2.exe
+Title1=theGreatSnailRaceV2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\Package
+ProjectFolder=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2
+ServerSideCab=
+File1=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\Package\setup.exe
+File2=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\Package\Setup.Lst
+File3=E:\my documents\Programing\VisualBasic\theGreatSnailRace V2\Package\theGreatSnailRaceV2.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

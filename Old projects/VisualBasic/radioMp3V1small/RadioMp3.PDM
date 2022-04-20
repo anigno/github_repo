@@ -1,0 +1,324 @@
+[Root]
+Most Recent Package=Standard Setup Package 3
+Most Recent Deploy=Folder Deployment 1
+
+
+[Package|Standard Setup Package 1|BUDGITA.]
+Icon1=RadioMp3.exe
+Title1=RadioMp3
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\mp3play ocx\Mp3play.ocx=
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\FindFilesOcx\FindFilesOcx.ocx=
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\FindFilesOcx\FindFilesOcx.ocx=
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\mp3play ocx\Mp3play.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\FindFilesOcx\FindFilesOcx.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\mp3play ocx\Mp3play.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+D:\WINNT\system32\Msvbvm60.dll=Yes
+D:\WINNT\system32\oleaut32.dll=Yes
+D:\WINNT\system32\olepro32.dll=Yes
+D:\WINNT\system32\asycfilt.dll=Yes
+D:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\RadioMp3.exe=Yes
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=Yes
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\RadioMp3\RadioMp3.exe=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\RadioMp3\RadioMp3.exe=$(AppPath)
+C:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+C:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+C:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\RadioMp3\RadioMp3.exe=$(AppPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\RadioMp3.exe=$(AppPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+D:\Documents and Settings\saharon\My Documents\Programing\VisualBasic\RadioMp3\RadioMp3.exe=No
+C:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\VisualBasic\Programing\RadioMp3\RadioMp3.exe=No
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\RadioMp3\RadioMp3.exe=No
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\RadioMp3.exe=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=multi
+Size=1.44 MB
+Title=RadioMp3    from ANIGNORA
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=ANIGNORA
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|ANIGNORA]
+Icon1=RadioMp3.exe
+Title1=RadioMp3
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup
+ProjectFolder=D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3
+ServerSideCab=
+File1=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup\setup.exe
+File2=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup\Setup.Lst
+File3=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup\RadioM1.CAB
+File4=d:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\RadioMp3\setup\RadioM2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz
+
+[Deploy|Folder Deployment 1|Root]
+Package=Standard Setup Package 1
+Handler=PDWizard.FolderDplySubWiz
+Folder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\dep
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\Package
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+
+[Package|Standard Setup Package 2|Files Released]
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 2|Files Added]
+
+[Package|Standard Setup Package 2|Files Removed]
+
+[Package|Standard Setup Package 2|Files In Project]
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\RadioMp3.exe=Yes
+D:\WINNT\system32\msvbvm60.dll=Yes
+D:\WINNT\system32\oleaut32.dll=Yes
+D:\WINNT\system32\olepro32.dll=Yes
+D:\WINNT\system32\asycfilt.dll=Yes
+D:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=Yes
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\RadioMp3.exe=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\RadioMp3.exe=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=single
+Size=
+Title=RadioMp3 by ANIGNORA
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=ANIGNORA
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|ANIGNORA]
+Icon1=RadioMp3.exe
+Title1=RadioMp3
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\Package
+ProjectFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1
+ServerSideCab=
+File1=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\Package\setup.exe
+File2=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\Package\Setup.Lst
+File3=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1\Package\RadioMp3.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 3|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\Package
+
+[Package|Standard Setup Package 3|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 3|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 3|Files Found]
+
+[Package|Standard Setup Package 3|Files Released]
+
+[Package|Standard Setup Package 3|Missing Dependency Information]
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=
+D:\WINNT\system32\FindFilesOcx.ocx=
+D:\WINNT\system32\Mp3play.ocx=
+
+[Package|Standard Setup Package 3|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 3|Files Added]
+
+[Package|Standard Setup Package 3|Files Removed]
+
+[Package|Standard Setup Package 3|Files In Project]
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\RadioMp3.exe=Yes
+D:\WINNT\system32\msvbvm60.dll=Yes
+D:\WINNT\system32\oleaut32.dll=Yes
+D:\WINNT\system32\olepro32.dll=Yes
+D:\WINNT\system32\asycfilt.dll=Yes
+D:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\WINNT\system32\Mp3play.ocx=Yes
+D:\WINNT\system32\FindFilesOcx.ocx=Yes
+
+[Package|Standard Setup Package 3|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 3|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 3|Install Locations]
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\RadioMp3.exe=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\mp3play ocx\Mp3play.ocx=$(WinSysPath)
+D:\Documents and Settings\anigno\My Documents\DataSheets\Computer\Programing\Visual Basic\Programing\FindFilesOcx\FindFilesOcx.ocx=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\WINNT\system32\Mp3play.ocx=$(WinSysPath)
+D:\WINNT\system32\FindFilesOcx.ocx=$(WinSysPath)
+
+[Package|Standard Setup Package 3|Configure Shared Files]
+Applicable=Yes
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\RadioMp3.exe=No
+
+[Package|Standard Setup Package 3|Distribution]
+Type=single
+Size=
+Title=RadioMp3   by ANIGNORA
+
+[Package|Standard Setup Package 3|Package]
+PackageFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\Package
+ProjectFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small
+ServerSideCab=
+File1=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\Package\setup.exe
+File2=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\Package\Setup.Lst
+File3=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\radioMp3V1small\Package\RadioMp3.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+[Package|Standard Setup Package 3|IconGroups]
+Group0=ANIGNORA
+PrivateGroup0=False
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 3|ANIGNORA]
+Icon1=RadioMp3.exe
+Title1=RadioMp3
+StartIn1=$(AppPath)
+Key1=Icon1

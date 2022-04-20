@@ -1,0 +1,5 @@
+place default.asp on the host
+host\default.asp?key=1		will set remote address
+host\default.asp?key=2		will display remote address
+host\default.asp		will redirect to remote address\index.html
+

@@ -1,0 +1,56 @@
+body
+{
+	background-attachment: scroll;
+	color: #E9E9E9;
+	background-color: Black;
+	font-size: medium;
+	background-repeat: repeat;
+	scrollbar-face-color: #11245A;
+	scrollbar-track-color: Black;
+	scrollbar-highlight-color: Black;
+	scrollbar-shadow-color: Black;
+	scrollbar-arrow-color: Black;
+	scrollbar-base-color: black;
+	scrollbar-3dlight-color: black;
+	scrollbar-darkshadow-color: black;
+}
+
+a
+{
+	font-weight: normal;
+	color: #FEFF6A;
+	text-decoration: none
+}
+a:hover{
+	color: #FEFF6A;
+	text-decoration: none;
+	background-color: #282828;
+	font:normal;
+}
+
+table
+{
+	
+}
+
+td
+{
+}
+
+h1{font-size: 24pt;}
+h2{font-size: 10px;}
+h3
+{
+	font-size: 40px;
+	color: #cc99ff;
+	font-family: 'Guttman Yad-Light';
+	line-height:50px;
+	letter-spacing:10px;
+	margin-bottom:5px
+}
+
+input,select,textarea,file
+{
+	background-color: #ccccff;
+	color:#330000;
+}

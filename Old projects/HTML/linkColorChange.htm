@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY bgColor=black link=darkseagreen text=turquoise>
+<P>link color change</P>
+<P>
+<TABLE border=1 cellPadding=1 cellSpacing=1 width="100%">
+  
+  <TR>
+    <TD><A href="link01">link01</A></TD>
+    <TD><A href="link02">link02</A></TD></TR>
+  <TR>
+    <TD><A href="link03">link03</A></TD>
+    <TD><A href="link04">link04</A></TD></TR></TABLE></P>
+<P>&nbsp; </P>
+</BODY>
+
+<script language="vbscript">
+'link color change script
+option explicit
+	dim oldColor,oldbackground,newcolor,newBackground
+	newcolor="red"
+	newbackground="blue"
+	sub document_onmouseover()
+		dim theTag
+		theTag=window.event.srcElement.tagName
+		if theTag="A" or theTag="DIV" then
+			oldbackground=window.event.srcElement.parentElement.style.backgroundcolor
+			oldcolor=window.event.srcElement.style.color
+			window.event.srcElement.parentElement.style.backgroundcolor=newBackground
+			window.event.srcElement.style.color=newcolor
+		end if
+	end sub
+	sub document_onmouseout()
+		dim theTag
+		theTag=window.event.srcElement.tagName
+		if theTag="A" or theTag="DIV" then
+			window.event.srcElement.parentElement.style.backgroundcolor=oldbackground
+			window.event.srcElement.style.color=oldcolor
+		end if
+	end sub
+</script>
+</HTML>

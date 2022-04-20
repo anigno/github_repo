@@ -1,0 +1,921 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{2C40C26D-DF5E-4BE0-9AD2-39D34B26002B}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "pinukitaf"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "pinukitaf"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "_template.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "about.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "admin.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "adminSet.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "adminStart.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bar.fla"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bar.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "functions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "gan01.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "header.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "header_old.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "index.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "links.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "main.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pinukitaf_header.fla"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "pinukitaf_header.swf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pinukitaf_header2.fla"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "pinukitaf_header2.swf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pinukitaf_main.fla"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "pinukitaf_main.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pinukitaf_main.swf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "poo1.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Styles.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_games\puzzle.swf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_games\quebracabeca2.swf"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\a-garfb.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\ani_cat.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\anidog3.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\ball.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bar004(tenis).gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bar013.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bar020.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bar023(cat run).gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bird002.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bird008(talking).gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bird011.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\bird014.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\d_016.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0001.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0019.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0026.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0073.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0092.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0124(mail).gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\dog0128(mail).gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\hippo_line.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\odie.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\people.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\pulser.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\siss.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\animated gifs\small cat 01.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\background images\2.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_images\background images\splash001-BG.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addBoard\addNew.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addBoard\editNew.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addBoard\main.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictureAdd.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictureAdd01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictureDel.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictureLoad.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictureLoad01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\pictures.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\picturesView.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjectAdd.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjectDel.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjectEditNew.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjects.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjectsView.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "pictureBrowser\subjectUpdate.asp"
+                    BuildAction = "Content"
+                />
+                <Folder RelPath = "pictureBrowser\bin\" />
+                <File
+                    RelPath = "root\default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella.zip"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "storiesForKids137\snowwhite.zip"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\cinderella.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\cinderella.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image001.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image003.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image005.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image008.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image009.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image011.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\cinderella\image014.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\10A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\11A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\12A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\13A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\14A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\15A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\17A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\18A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\19A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\1A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\1B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\1C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\20A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\20B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\21A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\21B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\25A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\26A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\26B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\26C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\26D.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\27A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\2A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\2B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\2C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\2D.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\2E.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\4A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\4B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\4C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\4D.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\5A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\5B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\5C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\6A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\7A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\8A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\8B.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\8C.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\8D.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\8E.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\9A.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\antoinepic.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BACK.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BAOBABS.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\baobabs-s.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\bg-default.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BIGPRINC.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\biography.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\biography.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BK21.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BK21.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BLUSTONE.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\BOOK.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\bookcont.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\busyman.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP1.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP10.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP11.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP12.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP13.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP14.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP15.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP16.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP17.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP18.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP19.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP2.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP20.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP21.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP22.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP23.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP24.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP25.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP26.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP27.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP3.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP4.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP5.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP6.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP7.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP8.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\CHAP9.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\COMP.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\comp.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\dedication.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\DRAWING1.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\FONDPAP.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\frame.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\GUESTB.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\guestbook.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\guestbook.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\INDEX.HTM"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\landscape.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\landscape-s.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\links.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\LINKS.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\LINKSBK.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\LPSF.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\LPSTARS.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\lpstars-s.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\PAPER.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\PRINCE.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\PRINCE2.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\prince2-s.jpg"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\PRINCE-S.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\SIGN.GIF"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\song.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\SONG.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\SONGBK.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\sunset.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\SUNSET.JPG"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\sunset2.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\sunset3.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\sunset4.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\wgbsign.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\yesmain.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\liitle_prince\ymain.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\snowwhite\image001.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\snowwhite\snowwhite.gif"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "storiesForKids137\snowwhite\snowwhite.htm"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "weekSubject\changeSubject.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "weekSubject\newSubject.asp"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

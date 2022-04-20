@@ -1,0 +1,85 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<div id=mainTable>mainTable</div>
+		<div id=prevNext>prev next</div>
+		<div id=homePage>homePage</div>
+	</body>
+</html>
+<script language="vbscript">
+	'must set pic() and desc() sizes
+	'set pic(i) images and desc(i) description
+	'set mainHeader and indexHeader
+	dim pic(27):dim desc(27)
+	mainHeader="main header"
+	indexHeader="index header"
+	homePageLink="#"
+	pic(1)="Logoc.gif"			:desc(1)="sdjkfsdjkh dfjds sdfjhsd jksdfh"
+	pic(2)="Logoc.gif"			:desc(2)="jksdjk f"
+	pic(3)="basket_blue.gif"	:desc(3)="djsh sdjgh sdfjhg jksdfhg jkgsd dggjd idgjkdjg kdfjg dkjg kdfj gkljdf gkljdf gkljdf klg"
+	pic(4)="basket_brown.gif"
+	pic(5)="basket_blue.gif"
+	pic(6)="basket_brown.gif"
+	pic(7)="basket_brown.gif"
+	pic(8)="basket_brown.gif"
+	pic(9)="Logoc.gif"
+	pic(10)="ball_blue.gif"
+	pic(11)="basket_blue.gif"
+	pic(12)="basket_brown.gif"
+	pic(13)="basket_blue.gif"
+	pic(14)="basket_brown.gif"
+	pic(15)="basket_brown.gif"
+	pic(16 )="basket_brown.gif"
+	pic(17)="ball_blue.gif"
+	pic(18)="basket_blue.gif"
+	pic(19)="basket_brown.gif"
+	pic(20)="basket_blue.gif"
+	pic(21)="basket_brown.gif"
+	pic(22)="basket_brown.gif"
+	pic(23 )="basket_brown.gif"
+	pic(24)="basket_blue.gif"
+	pic(25)="basket_brown.gif"
+	pic(26)="basket_brown.gif"
+	pic(27 )="basket_brown.gif"
+
+	b=UBOUND(pic)
+	mainPicWidth=400
+	mainPicMaxHeight=300
+	indexDiv=b/5
+	indexPicWidth=260/indexDiv
+	currentPic=1
+	homePage.innerHtml="<a href=" & homePageLink & ">Home</a>"
+	
+
+	sub show(i)
+		if i<1 then i=b
+		if i>b then i=1
+		mainpic.innerhtml="<img id=mainPicId src=" & pic(i) & " width=" & mainPicWidth & "><br><font size=1>" & i & " : " & desc(i) & "</font>"
+		if mainPicId.height>mainPicMaxHeight then
+			mh=mainPicId.height/mainPicMaxHeight
+			mainPicId.height=mainPicId.height/mh
+			mainPicId.width=mainPicId.width/mh
+			'document.writeln mh
+		end if
+		prevNext.innerHtml="<a href=# onClick=show("&i-1&")>Prev</a>&nbsp&nbsp&nbsp&nbsp<a href=# onClick=show("&i+1&")>Next</a>"
+		currentPic=i
+	end sub
+
+	s="<table align=center border=1 width=740><tr><td colspan=" & indexDiv+1 & " align=center>"&mainHeader&"</td></tr>"
+	s=s & "<tr><td colspan="&indexDiv&" align=center>"&indexHeader&"</td><td  align=center rowspan=" & b+1 & "><div id=mainPic>mainPic</div></td></tr>"
+	for a=1 to b step indexDiv
+		s=s & "<tr>"
+		for c=1 to indexDiv
+			if pic(a+indexDiv-c)<>"" then
+				s=s & "<td align=center width="&indexPicWidth&"><img src=" & pic(Int(a+indexDiv-c)) & " width=" & indexPicWidth & " onClick=show(" & a+indexDiv-c & ")><br><font size=1>"&Int(a+indexDiv-c)&"</font></td>"
+			else
+				s=s & ""
+			end if
+		next
+		s=s & "</tr>"
+	next
+	s=s & "</table>"
+	mainTable.innerhtml=s
+	show(1)
+</script>

@@ -1,0 +1,272 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Web"
+        ProductVersion = "7.0.9466"
+        SchemaVersion = "1.0"
+        ProjectGuid = "{03D4A8EE-777A-42BA-8678-4E615DEDC22E}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "myData"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "VBScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "myData"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Configuration" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "test.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_templates\_functions.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "_templates\_template01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\addressBook.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\default.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\delRecord.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\editInsert.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\editInsert01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "addressBook\show.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\addText.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\addText01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\bloger.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\content.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\data.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\delText.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\fileUpload.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\showOne.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\public\blogers.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\public\content.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\public\firstPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\public\showPublic.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bloger\public\showPublicOne.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar\calendar.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar\data.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar\delMessage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar\main.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "calendar\update.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "css\style01.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "css\test.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "css\test.css"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "exit\exit.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "forum\editInsert.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "forum\editInsert01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "forum\forum.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "forum\forumShow.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "login\login.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "login\login01.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "main\firstPage.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "main\header.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "main\main.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "newUser\newUser.asp"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "newUser\newUser01.asp"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft FrontPage 4.0">
+<TITLE></TITLE>
+</HEAD>
+<BODY>
+<P>
+<IMG border=0
+	 height=30
+	 src="button02.jpg" 
+	 width=60>
+<script language=vbscript>
+'script to process all IMG tags like buttons
+	dim isDown
+	sub document_onmousemove()
+	  if window.event.srcElement.tagName="IMG" then
+		if isdown=0 then
+			window.event.srcElement.style.borderwidth=1	
+		end if
+	  end if
+	end sub
+	sub document_onmousedown()
+	  if window.event.srcElement.tagName="IMG" then
+		isdown=1
+		window.event.srcElement.style.borderwidth=2
+	  end if
+	end sub
+	sub document_onmouseout()
+	  if window.event.srcElement.tagName="IMG" then
+		window.event.srcElement.style.borderwidth=0
+	  end if
+	end sub
+	sub document_onmouseup()
+	  if window.event.srcElement.tagName="IMG" then
+		isdown=0
+	  end if
+	end sub
+</script>
+
+<P></P>
+<P><INPUT id=text1 name=text1></P>
+<a href=###>link01</a>
+
+
+</BODY>
+</HTML>

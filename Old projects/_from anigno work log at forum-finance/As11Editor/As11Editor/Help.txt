@@ -1,0 +1,2 @@
+when running the simm1 simulator :
+L+ is used to create a log file (add to existing or create new file)

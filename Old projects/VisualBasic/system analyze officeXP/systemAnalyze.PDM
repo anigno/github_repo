@@ -1,0 +1,235 @@
+[Root]
+Most Recent Package=Standard Setup Package 2
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=d:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\1
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+system2.xls=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+D:\Program Files\Microsoft Office\Office10\EXCEL.EXE=
+D:\Program Files\Common Files\Microsoft Shared\MSORun\MSORUN.DLL=
+D:\Program Files\Common Files\Microsoft Shared\Office10\MSO.DLL=
+D:\Program Files\Microsoft Office\Office\EXCEL9.OLB=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+D:\WINNT\system32\MSINET.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+system2.xls=
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\systemAnalyze.exe=Yes
+D:\WINDOWS\system32\msvbvm60.dll=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Office\Office\EXCEL9.OLB=Yes
+D:\WINDOWS\system32\MSINET.OCX=Yes
+D:\WINDOWS\system32\RICHTX32.OCX=Yes
+D:\WINDOWS\system32\MSWINSCK.OCX=Yes
+D:\WINDOWS\system32\VB6STKIT.DLL=Yes
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\my documents\Programing\VisualBasic\system analyze\systemAnalyze.exe=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Common Files\Microsoft Shared\Office10\MSO.DLL=$(WinSysPath)
+D:\Program Files\Common Files\Microsoft Shared\MSORun\MSORUN.DLL=$(WinSysPath)
+D:\Program Files\Microsoft Office\Office10\EXCEL.EXE=$(AppPath)
+D:\WINNT\system32\MSINET.OCX=$(WinSysPath)
+D:\WINNT\system32\RICHTX32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+E:\my documents\Programing\VisualBasic\system analyze\system2.xls=$(AppPath)
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\systemAnalyze.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\Office\EXCEL9.OLB=$(WinSysPath)
+D:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+D:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+D:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls=$(AppPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\my documents\Programing\VisualBasic\system analyze\systemAnalyze.exe=No
+D:\Program Files\Microsoft Office\Office10\EXCEL.EXE=No
+E:\my documents\Programing\VisualBasic\system analyze\system2.xls=No
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\systemAnalyze.exe=No
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=systemAnalyze office2k
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=systemAnalyze
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|systemAnalyze]
+Icon1=systemAnalyze.exe
+Title1=systemAnalyze
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=d:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\1
+ProjectFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k
+ServerSideCab=
+File1=d:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\1\setup.exe
+File2=d:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\1\Setup.Lst
+File3=d:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\1\systemAnalyze.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz
+
+
+[Package|Standard Setup Package 2|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package
+
+[Package|Standard Setup Package 2|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 2|Files Found]
+
+[Package|Standard Setup Package 2|Files Released]
+system2.xls=
+EXCEL9.OLB=
+
+[Package|Standard Setup Package 2|Missing Dependency Information]
+D:\Program Files\Microsoft Office\Office\EXCEL9.OLB=
+
+[Package|Standard Setup Package 2|Out-of-Date Dependency Information]
+
+[Package|Standard Setup Package 2|Files Added]
+system2.xls=
+
+[Package|Standard Setup Package 2|Files Removed]
+
+[Package|Standard Setup Package 2|Files In Project]
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+E:\my documents\Programing\VisualBasic\system analyze officeXP\systemAnalyze.exe=Yes
+D:\WINNT\system32\MSVBVM60.DLL=Yes
+D:\WINNT\system32\MSINET.OCX=Yes
+D:\WINNT\system32\RICHTX32.OCX=Yes
+D:\WINNT\system32\MSWINSCK.OCX=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+
+[Package|Standard Setup Package 2|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 2|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 2|Install Locations]
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\systemAnalyze.exe=$(AppPath)
+D:\WINDOWS\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Office\Office\EXCEL9.OLB=$(WinSysPath)
+D:\WINDOWS\system32\MSINET.OCX=$(WinSysPath)
+D:\WINDOWS\system32\RICHTX32.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\RICHED32.DLL=$(WinSysPathSysFile)
+D:\WINDOWS\system32\MSWINSCK.OCX=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINDOWS\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls=$(AppPath)
+E:\my documents\Programing\VisualBasic\system analyze officeXP\systemAnalyze.exe=$(AppPath)
+D:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\MSINET.OCX=$(WinSysPath)
+D:\WINNT\system32\RICHTX32.OCX=$(WinSysPath)
+D:\WINNT\system32\MSWINSCK.OCX=$(WinSysPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+
+[Package|Standard Setup Package 2|Configure Shared Files]
+Applicable=Yes
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\systemAnalyze.exe=No
+D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\system2.xls=No
+E:\my documents\Programing\VisualBasic\system analyze officeXP\systemAnalyze.exe=No
+
+[Package|Standard Setup Package 2|Distribution]
+Type=multi
+Size=1.44 MB
+Title=systemAnalyze
+
+[Package|Standard Setup Package 2|IconGroups]
+Group0=systemAnalyze
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 2|systemAnalyze]
+Icon1=systemAnalyze.exe
+Title1=systemAnalyze
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 2|Package]
+PackageFolder=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package
+ProjectFolder=E:\my documents\Programing\VisualBasic\system analyze officeXP
+ServerSideCab=
+File1=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package\setup.exe
+File2=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package\Setup.Lst
+File3=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package\system1.CAB
+File4=D:\Documents and Settings\anigno\My Documents\Programing\VisualBasic\system analyze office2k\Package\system2.CAB
+Handler1=PDWizard.FloppyDplySubWiz
+Handler2=PDWizard.FolderDplySubWiz
+Handler3=PDWizard.WebPostDplySubWiz

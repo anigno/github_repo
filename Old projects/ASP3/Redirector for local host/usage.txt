@@ -1,0 +1,8 @@
+host computer:
+1. http://siteHttp?key=1
+2. refresh browser
+
+client computer:
+http://siteHttp
+
+will redirect client to host computer ip

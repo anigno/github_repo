@@ -1,0 +1,120 @@
+﻿3.0.1
+20/2/10
+	First release
+3.0.2
+22/2/10
+	Change IsNoTrade check in analizer to current day close==high==low
+3.0.3
+23/2/10
+	Change IsNoTrade check to 2of3 of close,high and low are equal in current and previous dates
+	Selected row fore color in all tables changed to purple
+	Added analyzed data for DailyChangePer and a table column
+	Added ActiveStocks table
+	UpdateManager.Start() moved to FormMain load event
+	No backup file is being created
+	Add login password screen
+3.0.4
+23/2/10
+	Fixed problem when selected stock in active stocks table and a stock is updated and selected in stocks names table, it had updated first row in stock data table
+24/2/10   
+	Moved load data, save date and stop update to main form for better user notifing of application run
+	Added condition for no trade, data is equal in current date
+	Changed UI buttons and icons
+3.0.5
+24/2/10
+	Added property for IsStockActive and logic for it in StockAnalizeFirst, change main form to use this peoperty for add/edit active stocks table
+3.0.6
+25/2/10
+	Added label for last updated stock
+	Added parameter SignalToDateChangePer for change between current date and signal date
+	Changed grid stracture, combine hit with value and signaled with current value
+27/2/10
+	Changed selected row background
+3.0.7
+2/3/10
+	Fixed calculation of close signals SignalToDateChangePer
+	Remove backcolor by analyzeTwo for row
+	Added backcolor according to signal type for row
+	Added last update hits and misses calculation
+	moved loading before security for password reading
+3.0.9
+3/3/10
+	Added split container
+	Removed some columns from stocks names grid
+	Fixed problem with google RT data changed after receiving last update. receive old data from csv file (last 15 minutes of trade are not reflected in RT data)
+	Added report form
+3.1.0
+8/3/10
+	Added FormTestStocks
+	modified analysis class, added calculations class
+3.1.1
+8/3/10
+	Fixed bug, when handling bad stock name
+	When stock first added, a new, empty dayChange added
+	When stock is bad, time updated is set to max date so it should never be selected to be updated
+	Added stock test graph
+	Removed daily sammery of hits and misses
+	Added daily all active stocks sammery
+	Columns for stock names table One,TwoPer returned to be visible
+3.1.2
+11/3/10
+	Added maximum positions per day display, visible is false
+	Add calculate button to report form, instead of auto calculation on date change
+3.2.1
+12/3/10
+	Generalized solution structure, Added Analyzers project
+18/3/10
+	Stocks names table, Daily change is visible
+	History length stock selection bug fixed
+	decreases fonts in  test stocks form to hold 4 digits of results
+	Added Daily positions calculations, changed name Total position sum
+	Fixed bug for stock with not enough data to analyze
+3.2.5
+19/3/10
+	Added simulating form for Standard Deviation calculation and profits
+	Simulated Normal changed to 248
+	Daily signalToDate changes ignore signaled today value
+	Fixed bug in simulating when one stock has no data, others does not calculated
+3.2.6
+22/3/10
+	Added Beta calculation to simulation
+3.2.7
+29/3/10
+	Added Yahoo data extract for composites
+	Stock name with '^' prefix will be extracted by yahoo extractor
+	Added formulaOneParam parameter instead of const value usage for first analyzer
+	Added multiplier as symbol postfix for all calculated profits
+	Added stocks update counter
+3.2.8
+2/4/10
+	Added tab control and google s&p composite from google finance
+	Added checkBox in testStock form to create CSV with profit results
+3.2.9
+9/4/10
+	Fixed missing scroll for stock data grid
+	Added symbols to main form's header, set at settings form
+	Added hits,misses,longs,shorts and S&P (optional) to csv export
+10/4/10
+	Header symbols will show daily change per
+	CSV exports will calculate active longs and shorts
+3.2.10
+11/4/10
+	Added vertical split panel between right grids
+	CSV export daily active changes
+3.2.11
+13/4/10
+	Fixed header simbols bug, not updated
+3.2.12
+14/4/10
+	Added browser tab
+3.2.13
+22/4/10
+	Added QuantityForPosition
+3.2.14
+23/4/10
+	Created a web browser UC and Added two web broswers with default homepage
+	Replaced status tab with new web browser control
+3.2.15
+21/5/10
+	Added fuscated none .NET dll for calculation of anlyzer one
+	

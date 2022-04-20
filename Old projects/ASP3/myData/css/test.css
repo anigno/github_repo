@@ -1,0 +1,19 @@
+body
+{
+	background-attachment: fixed;
+	background-image: url(paper083.jpg);
+	background-repeat: repeat;
+	background-color: blue;
+}
+table
+{
+	color: #99ccff;
+	background-color:#fed;
+}
+h1,h2{color: #41a;}
+h1{	font-size: 30px;}
+h2{font-size: 20px;}
+h3{font-size: 20px;	font-family: 'Guttman Yad';}
+
+a{color:#f85; font-weight:bold; text-decoration:none;}
+a:hover{color:#66f;text-decoration:none;}

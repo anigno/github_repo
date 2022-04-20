@@ -1,0 +1,60 @@
+       UCalc Fast Math Parser 2.0 Order Form
+
+
+Name__________________________________Date___________
+
+Company______________________________________________
+
+Address______________________________________________
+
+City______________________State/Country______________
+
+Zip___________E-mail address_________________________
+
+Phone______________________Fax_______________________
+
+How did you hear about this component?
+
+Comments:
+
+
+INDIVIDUAL LICENSE for UCalc Fast Math Parser 2.0
+1 Upgrade (1.0 to 2.0, Lite to Standard, or Standard
+  to Professional): $150
+1 Upgrade (Lite to Professional): $300
+1 Lite License: $150
+1 Educational License: $150
+1 Standard License: $300
+1 Professional License: $450
+
+See LICENSE.TXT for details on the different license options.
+
+See your reseller, or send e-mail to sales@ucalc.com for a quote on
+site license fees.
+
+TOTAL ORDER $___________________
+
+_ _ _ O / _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+      O \ 
+
+A UCalc Fast Math Parser license can be purchased through resellers
+such as Digital River, ComponentSource, PsL, and a number of others,
+by various convenient means, such as phone (toll-free), fax, online,
+local currencies (with ComponentSource), credit-card, check, money
+order, purchase order etc....  It can also be purchased directly
+from the author.  To find out the most convenient method of payment,
+please visit:
+
+http://www.ucalc.com/mathparser/order.html
+
+If you obtained this component through a reseller, it might have the
+reseller's information in a file named ORDER.TXT.
+
+Each reseller has its own way of handling sales.  For the smoothest
+sales transactions, when placing an order through one of the resellers,
+please also send e-mail to sales@ucalc.com and mention the reseller the
+order was placed through, and the date the order was placed on.  Or if
+you need assistance in choosing a reseller based on your geographic
+location, or licensing needs, send e-mail to that same address.  While
+online, please also take a moment to fill out the user satisfaction
+survey.

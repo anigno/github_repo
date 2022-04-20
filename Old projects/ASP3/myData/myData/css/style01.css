@@ -1,0 +1,51 @@
+body
+{
+	background-attachment: fixed;
+	color: #ccccff;
+	background-repeat: repeat;
+	background-color: #330000;
+	scrollbar-face-color: #330000; 
+	scrollbar-track-color: #333300; 
+	scrollbar-highlight-color: yellow; 
+	scrollbar-shadow-color: yellow; 
+	scrollbar-arrow-color: yellow;
+
+	scrollbar-base-color: black; 
+	scrollbar-3dlight-color: black; 
+	scrollbar-darkshadow-color: black; 
+}
+	
+table
+{
+	background-color: #333300;
+	font-size:25px;
+}
+td
+{
+	font-size:20px;	
+}
+h1{font-size: 30px;color: #cc99ff;}
+h2{font-size: 20px;color: #99ccff;}
+h3
+{
+	font-size: 40px;
+	color: #cc99ff;
+	font-family: 'Guttman Yad-Light';
+	line-height:50px;
+	letter-spacing:10px;
+	margin-bottom:5px
+}
+
+a
+{
+	font-weight: bold;
+	color: #ffcc00;
+	text-decoration: none;
+}
+a:hover{color:#66f;text-decoration:none; background-color:Black;}
+
+input,select,textarea,file
+{
+	background-color: #ccccff;
+	color:#330000;
+}

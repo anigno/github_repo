@@ -1,0 +1,13 @@
+Microsoft Visual Studio Solution File, Format Version 1.00
+Project("{BDD4A1A1-7A1F-11D0-AC13-00A0C91E29D5}") = "lala/hatotahbikes_new02", "hatotahbikes_new02.vip", "{58274F01-71CF-4597-82EC-2CFE9FA6F23D}"
+EndProject
+Global
+	GlobalSection(LocalDeployment) = postSolution
+		StartupProject = {58274F01-71CF-4597-82EC-2CFE9FA6F23D}
+	EndGlobalSection
+	GlobalSection(BuildOrder) = postSolution
+		0 = {58274F01-71CF-4597-82EC-2CFE9FA6F23D}
+	EndGlobalSection
+	GlobalSection(DeploymentRoot) = postSolution
+	EndGlobalSection
+EndGlobal

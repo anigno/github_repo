@@ -1,0 +1,102 @@
+[Root]
+Most Recent Package=Standard Setup Package 1
+
+
+[Package|Standard Setup Package 1|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=E:\my documents\Programing\VisualBasic\webcam alarm\Package
+
+[Package|Standard Setup Package 1|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Standard Setup Package 1|Files Found]
+
+[Package|Standard Setup Package 1|Files Released]
+
+[Package|Standard Setup Package 1|Missing Dependency Information]
+E:\my documents\Programing\VisualBasic\webcam alarm\PicFormat32.ocx=
+E:\my documents\Programing\VisualBasic\webcam alarm\ezVidC60.ocx=
+
+[Package|Standard Setup Package 1|Out-of-Date Dependency Information]
+D:\WINNT\system32\mscomctl.ocx=
+D:\WINNT\system32\MSINET.OCX=
+
+[Package|Standard Setup Package 1|Files Added]
+
+[Package|Standard Setup Package 1|Files Removed]
+
+[Package|Standard Setup Package 1|Files In Project]
+E:\my documents\Programing\VisualBasic\webcam alarm\webCamAlarm beta2.exe=Yes
+D:\WINNT\system32\msvbvm60.dll=Yes
+D:\WINNT\system32\oleaut32.dll=Yes
+D:\WINNT\system32\olepro32.dll=Yes
+D:\WINNT\system32\asycfilt.dll=Yes
+D:\WINNT\system32\stdole2.tlb=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+D:\WINNT\system32\MSINET.OCX=Yes
+E:\my documents\Programing\VisualBasic\webcam alarm\ezVidC60.ocx=Yes
+D:\WINNT\system32\mscomctl.ocx=Yes
+D:\WINNT\system32\TABCTL32.OCX=Yes
+E:\my documents\Programing\VisualBasic\webcam alarm\PicFormat32.ocx=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+D:\WINNT\system32\VB6STKIT.DLL=Yes
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Standard Setup Package 1|Configure Registry Files]
+Applicable=No
+
+[Package|Standard Setup Package 1|Configure Remote Servers]
+Applicable=No
+
+[Package|Standard Setup Package 1|Install Locations]
+E:\my documents\Programing\VisualBasic\webcam alarm\webCamAlarm beta2.exe=$(AppPath)
+D:\WINNT\system32\msvbvm60.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\oleaut32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\olepro32.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\asycfilt.dll=$(WinSysPathSysFile)
+D:\WINNT\system32\stdole2.tlb=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+D:\WINNT\system32\MSINET.OCX=$(WinSysPath)
+E:\my documents\Programing\VisualBasic\webcam alarm\ezVidC60.ocx=$(WinSysPath)
+D:\WINNT\system32\mscomctl.ocx=$(WinSysPath)
+D:\WINNT\system32\TABCTL32.OCX=$(WinSysPath)
+E:\my documents\Programing\VisualBasic\webcam alarm\PicFormat32.ocx=$(WinSysPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+D:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+D:\Program Files\Microsoft Visual Studio\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Standard Setup Package 1|Configure Shared Files]
+Applicable=Yes
+E:\my documents\Programing\VisualBasic\webcam alarm\webCamAlarm beta2.exe=No
+
+[Package|Standard Setup Package 1|Distribution]
+Type=single
+Size=
+Title=webCamAlarm beta2
+
+[Package|Standard Setup Package 1|IconGroups]
+Group0=webCamAlarm beta2
+PrivateGroup0=True
+Parent0=$(Programs)
+
+[Package|Standard Setup Package 1|webCamAlarm beta2]
+Icon1="webCamAlarm beta2.exe"
+Title1=webCamAlarm beta2
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Standard Setup Package 1|Package]
+PackageFolder=E:\my documents\Programing\VisualBasic\webcam alarm\Package
+ProjectFolder=E:\my documents\Programing\VisualBasic\webcam alarm
+ServerSideCab=
+File1=E:\my documents\Programing\VisualBasic\webcam alarm\Package\setup.exe
+File2=E:\my documents\Programing\VisualBasic\webcam alarm\Package\Setup.Lst
+File3=E:\my documents\Programing\VisualBasic\webcam alarm\Package\webCamAlarm beta2.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

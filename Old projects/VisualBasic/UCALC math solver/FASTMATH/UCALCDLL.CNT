@@ -1,0 +1,114 @@
+:Base UCALCDLL.hlp
+:Title Help for UCalc Fast Math Parser
+:Index Index for UCALCDLL.hlp=UCALCDLL.hlp
+1 Overview
+2 Getting Started=Hlp_Getting_Started
+2 Introduction=Hlp_Introduction
+2 License Agreement=Hlp_License
+2 Ordering Information=Hlp_Ordering_Information
+2 Technical Support=Hlp_Author
+2 What's New=Hlp_Whatxs_New
+1 Procedures
+2 ucAlias=Hlp_ucAlias
+2 ucDefineFunction=Hlp_ucDefineFunction
+2 ucDefineVariable=Hlp_ucDefineVariable
+2 ucError=Hlp_ucError
+2 ucErrorData=Hlp_ucErrorData
+2 ucErrorMessage=Hlp_Error_Messages
+2 ucEval=Hlp_ucEval
+2 ucEvaluate=Hlp_ucEvaluate
+2 ucGetError=Hlp_ucError
+2 ucGetErrorData=Hlp_ucErrorData
+2 ucGetParamStr=Hlp_ucParamStr
+2 ucGetTrigMode=Hlp_ucTrigMode
+2 ucGetVariableValue=Hlp_ucVariableValue
+2 ucIsString=Hlp_ucIsString
+2 ucParam=Hlp_ucParam
+2 ucParamCount=Hlp_ucParamCount
+2 ucParamStr=Hlp_ucParamStr
+2 ucParse=Hlp_ucParse
+2 ucPreParse=Hlp_ucPreParse
+2 ucReleaseExpr=Hlp_ucReleaseExpr
+2 ucReleaseVariable=Hlp_ucReleaseVariable
+2 ucReset=Hlp_ucReset
+2 ucSetError=Hlp_ucError
+2 ucSetErrorData=Hlp_ucErrorData
+2 ucSetParamStr=Hlp_ucParamStr
+2 ucSetTrigMode=Hlp_ucTrigMode
+2 ucSetVariableValue=Hlp_ucVariableValue
+2 ucTrigMode=Hlp_ucTrigMode
+2 ucVariableValue=Hlp_ucVariableValue
+1 Technical Issues
+2 DLL Exported Functions=Hlp_DLL_Exported
+2 Error Handling=Hlp_ErrorHandling
+2 Notation=Hlp_Implicit_Multiplication
+2 Operators=Hlp_Operators
+2 Order of Precedence=Hlp_Precedence
+2 String Handling=Hlp_String_Handling
+2 Technical Notes=Hlp_Technical_Notes
+2 Technical Support=Hlp_Author
+2 Compiler Specifics
+3 Borland C++ Builder=Hlp_Cxx_Issues
+3 Delphi=Hlp_Delphi_Issues
+3 PowerBASIC=Hlp_PowerBASIC_Issues
+3 Visual Basic=Hlp_Visual_Basic
+3 Visual C++=Hlp_Cxx_Issues
+1 Licensing Issues
+2 License Agreement=Hlp_License
+2 Ordering Information=Hlp_Ordering_Information
+2 Technical Support=Hlp_Author
+1 Examples
+2 C++
+3 Introduction=Hlp_IntroductionCPP
+3 ucDefineFunction=Hlp_ucDefineFunctionCPP
+3 ucDefineVariable=Hlp_ucDefineVariableCPP
+3 ucError=Hlp_ucErrorCPP
+3 ucErrorData=Hlp_ucErrorDataCPP
+3 ucErrorMessage=Hlp_ucErrorMessageCPP
+3 ucEval=Hlp_ucEvalCPP
+3 ucEvaluate=Hlp_ucEvaluateCPP
+3 ucParam=Hlp_ucParamCPP
+3 ucParamCount=Hlp_ucParamCountCPP
+3 ucParamStr=Hlp_ucParamStrCPP
+3 ucParse=Hlp_ucParseCPP
+3 ucPreParse=Hlp_ucPreParseCPP
+3 ucReleaseExpr=Hlp_ucReleaseExprCPP
+3 ucReset=Hlp_ucResetCPP
+3 ucTrigMode=Hlp_ucTrigModeCPP
+3 ucVariableValue=Hlp_ucVariableValueCPP
+2 Delphi
+3 Introduction=Hlp_IntroductionDelphi
+3 ucDefineFunction=Hlp_ucDefineFunctionDelphi
+3 ucDefineVariable=Hlp_ucDefineVariableDelphi
+3 ucError=Hlp_ucErrorDelphi
+3 ucErrorData=Hlp_ucErrorDataDelphi
+3 ucErrorMessage=Hlp_ucErrorMessageDelphi
+3 ucEval=Hlp_ucEvalDelphi
+3 ucEvaluate=Hlp_ucEvaluateDelphi
+3 ucParam=Hlp_ucParamDelphi
+3 ucParamCount=Hlp_ucParamCountDelphi
+3 ucParamStr=Hlp_ucParamStrDelphi
+3 ucParse=Hlp_ucParseDelphi
+3 ucPreParse=Hlp_ucPreParseDelphi
+3 ucReleaseExpr=Hlp_ucReleaseExprDelphi
+3 ucReset=Hlp_ucResetDelphi
+3 ucTrigMode=Hlp_ucTrigModeDelphi
+3 ucVariableValue=Hlp_ucVariableValueDelphi
+2 Visual Basic
+3 Introduction=Hlp_Introduction
+3 ucDefineFunction=Hlp_ucDefineFunction
+3 ucDefineVariable=Hlp_ucDefineVariable
+3 ucError=Hlp_ucError
+3 ucErrorData=Hlp_ucErrorData
+3 ucErrorMessage=Hlp_Error_Messages
+3 ucEval=Hlp_ucEval
+3 ucEvaluate=Hlp_ucEvaluate
+3 ucParam=Hlp_ucParam
+3 ucParamCount=Hlp_ucParamCount
+3 ucParamStr=Hlp_ucParamStr
+3 ucParse=Hlp_ucParse
+3 ucPreParse=Hlp_ucPreParse
+3 ucReleaseExpr=Hlp_ucReleaseExpr
+3 ucReset=Hlp_ucReset
+3 ucTrigMode=Hlp_ucTrigMode
+3 ucVariableValue=Hlp_ucVariableValue

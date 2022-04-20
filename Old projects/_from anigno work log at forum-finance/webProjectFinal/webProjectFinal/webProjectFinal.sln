@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webProjectFinal", "http://localhost/webProjectFinal/webProjectFinal.csproj", "{3579BE9B-1952-4ED9-981A-21F848874011}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "databaseConnection", "databaseConnection\databaseConnection.csproj", "{A0A052E8-83E1-4092-B819-4AA70178822D}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dataManipulation", "dataManipulation\dataManipulation.csproj", "{E66E0CE9-C93E-4096-8DAB-DB8B7AFE4767}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{3579BE9B-1952-4ED9-981A-21F848874011}.Debug.ActiveCfg = Debug|.NET
+		{3579BE9B-1952-4ED9-981A-21F848874011}.Debug.Build.0 = Debug|.NET
+		{3579BE9B-1952-4ED9-981A-21F848874011}.Release.ActiveCfg = Release|.NET
+		{3579BE9B-1952-4ED9-981A-21F848874011}.Release.Build.0 = Release|.NET
+		{A0A052E8-83E1-4092-B819-4AA70178822D}.Debug.ActiveCfg = Debug|.NET
+		{A0A052E8-83E1-4092-B819-4AA70178822D}.Debug.Build.0 = Debug|.NET
+		{A0A052E8-83E1-4092-B819-4AA70178822D}.Release.ActiveCfg = Release|.NET
+		{A0A052E8-83E1-4092-B819-4AA70178822D}.Release.Build.0 = Release|.NET
+		{E66E0CE9-C93E-4096-8DAB-DB8B7AFE4767}.Debug.ActiveCfg = Debug|.NET
+		{E66E0CE9-C93E-4096-8DAB-DB8B7AFE4767}.Debug.Build.0 = Debug|.NET
+		{E66E0CE9-C93E-4096-8DAB-DB8B7AFE4767}.Release.ActiveCfg = Release|.NET
+		{E66E0CE9-C93E-4096-8DAB-DB8B7AFE4767}.Release.Build.0 = Release|.NET
+	EndGlobalSection
+	GlobalSection(SolutionItems) = postSolution
+		webProjectFinal.vsd = webProjectFinal.vsd
+		webProjectFinal1.vsd = webProjectFinal1.vsd
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

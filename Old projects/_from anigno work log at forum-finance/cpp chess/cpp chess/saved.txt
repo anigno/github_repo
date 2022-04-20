@@ -1,0 +1,118 @@
+				int x = state->toolList[currentPlayer][i]->x;
+				int y = state->toolList[currentPlayer][i]->y;
+
+				if  (state->toolList[currentPlayer][i]->type==pawn)
+				{
+					
+					if (currentPlayer==0)
+					{
+						
+						ret+=y-2;
+						if (state->boardData->posData[y-1][x-1]==0)
+						{
+							ret+=1;
+						}
+						if (state->boardData->posData[y-1][x+1]==0)
+						{
+							ret+=1;
+						}
+						ret+=abs(6-x);
+					}
+					//other player
+					/*else
+					{
+						ret+=9-y;
+						if (state->boardData->posData[y+1][x+1]==0)
+						{
+							ret-=1;
+						}
+						if (state->boardData->posData[y+1][x-1]==0)
+						{
+							ret-=1;
+						}
+						ret-=abs(6-x);
+					}*/
+				}
+				
+					if  (state->toolList[currentPlayer][i]->type==king)
+					{
+					
+						if (currentPlayer==0)
+						{
+							if (y==8)
+								ret+=5;
+						}
+						
+						//other player
+						else
+						{
+							if (y==3)
+									ret+=5;
+						}
+					}
+				
+
+				if(state->toolList[currentPlayer][0]->alive==false)
+				{
+					return -9999;
+				}
+				if(state->toolList[otherPlayer][0]->alive==false)
+				{
+					return +9999;
+				}
+			}
+
+
+
+
+
+	cMove* runMinMax(int maxDepth){
+		this->maxDepth=maxDepth;
+		selectedMove=NULL;
+		runMax(maxDepth);
+		return selectedMove;
+	}
+
+	int runMax(int depth){
+		int best=-9999;
+		int ret;
+		cList* legalMoves;
+		cMove* move;
+		if(depth==0)return evaluate();
+		legalMoves=generateLegalMoves(currentPlayer);
+		for(cListNode* it=legalMoves->startNode;it!=NULL;it=it->next){
+			move=(cMove*)it->data;
+			makeMove(move);
+			ret=runMin(depth-1);
+			if(ret>=best){
+				best=ret;
+				if(depth==this->maxDepth){
+					delete selectedMove;
+					selectedMove=new cMove(move->tool,move->oldY,move->oldX,move->newY,move->newX);
+					selectedMove->killedTool=move->killedTool;
+					selectedMove->pawnChanged=move->pawnChanged;
+				}
+			}//if
+			unMakeMove(move);
+		}//for
+		return best;
+	}//runMax()
+
+	int runMin(int depth){
+		int worst=9999;
+		int ret;
+		cList* legalMoves;
+		cMove* move;
+		if(depth==0)return evaluate();
+		legalMoves=generateLegalMoves(otherPlayer);
+		for(cListNode* it=legalMoves->startNode;it!=NULL;it=it->next){
+			move=(cMove*)it->data;
+			makeMove(move);
+			ret=runMax(depth-1);
+			if(ret<=worst){
+				worst=ret;
+			}//if
+			unMakeMove(move);
+		}//for
+		return worst;
+	}//runMin()

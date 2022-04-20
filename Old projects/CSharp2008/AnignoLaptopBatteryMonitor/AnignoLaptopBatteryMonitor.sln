@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoLaptopBatteryMonitor", "AnignoLaptopBatteryMonitor\AnignoLaptopBatteryMonitor.csproj", "{E011375B-77D0-4584-BA0B-2853354A28BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnignoLibrary", "..\AnignoLibrary2008\AnignoLibrary\AnignoLibrary.csproj", "{73C4FAF3-2216-48B5-927B-3B34875ED470}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E011375B-77D0-4584-BA0B-2853354A28BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E011375B-77D0-4584-BA0B-2853354A28BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E011375B-77D0-4584-BA0B-2853354A28BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E011375B-77D0-4584-BA0B-2853354A28BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C4FAF3-2216-48B5-927B-3B34875ED470}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

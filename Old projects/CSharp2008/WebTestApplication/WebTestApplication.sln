@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTestApplication", "WebTestApplication\WebTestApplication.csproj", "{45FF936E-65C1-4EF5-BC95-5913B5BD7D05}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebPhotoAlbum", "WebPhotoAlbum\WebPhotoAlbum.csproj", "{DE743286-D325-4504-A5B5-C57BA3AF3ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebLibrary", "WebLibrary\WebLibrary.csproj", "{8BBDEF9A-AE30-43EA-917D-EC24D21C62F7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45FF936E-65C1-4EF5-BC95-5913B5BD7D05}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45FF936E-65C1-4EF5-BC95-5913B5BD7D05}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45FF936E-65C1-4EF5-BC95-5913B5BD7D05}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45FF936E-65C1-4EF5-BC95-5913B5BD7D05}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE743286-D325-4504-A5B5-C57BA3AF3ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE743286-D325-4504-A5B5-C57BA3AF3ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE743286-D325-4504-A5B5-C57BA3AF3ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE743286-D325-4504-A5B5-C57BA3AF3ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BBDEF9A-AE30-43EA-917D-EC24D21C62F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BBDEF9A-AE30-43EA-917D-EC24D21C62F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BBDEF9A-AE30-43EA-917D-EC24D21C62F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BBDEF9A-AE30-43EA-917D-EC24D21C62F7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

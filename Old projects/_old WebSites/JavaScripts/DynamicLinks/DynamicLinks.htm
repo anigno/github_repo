@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>DynamicLinks</title>
+<style type="text/css">
+.style3 {
+	border-width: 1px;
+	font-size: x-large;
+		text-align: center;
+	background-color: #FFFFFF;
+}
+.style6 {
+	border-width: 1px;
+	font-size: x-large;
+	text-align: center;
+	color: #000080;
+	background-color: #FFFFFF;
+}
+.style7 {
+	color: #000080;
+}
+.style9 {
+	color: #000080;
+	text-align: center;
+}
+.style10 {
+	color: #000080;
+	text-align: center;
+	background-color: #FFFFFF;
+}
+</style>
+</head>
+
+<body style="margin: 0">
+
+<div id="ZoomPanel" style="position:absolute;left:100px;top:10px; width: 168px;">
+	<table border="1" >
+	<tr>
+		<td colspan="2" class="style10"><div id="MapScale" class="style7">100%</div></td>
+	</tr>
+	<tr>
+		<td class="style6" style="width: 47px" onclick="MapImageZoomIn()" style="cursor:pointer">+</td>
+
+		<td class="style3" style="width: 47px" onclick="MapImageZoomOut()" style="cursor:pointer">-</td>
+	</tr>
+	<tr>
+		<td colspan="2" class="style10"><div id="LatLong" class="style9">Lat,Long</div></td>
+	</tr>
+	</table>
+</div>
+<img id="MapImage" alt="" width="20" height="20" src="Design/IsraelMap03.gif" onclick="ScrollToMouseCenter()" />
+<div id="ToolTipBox" style="z-index:300"></div>
+
+
+
+<script src="../Utils.js" language="javascript" type="text/javascript">
+</script>
+
+<script language="javascript" type="text/javascript" src="Design\script.js">
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
